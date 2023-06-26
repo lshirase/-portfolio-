@@ -1,4 +1,4 @@
-pre[class*='language-'] {
+/* pre[class*='language-'] {
   color: theme('colors.zinc.100');
 }
 
@@ -44,4 +44,4 @@ pre[class*='language-'] {
 .token.operator,
 .token.combinator {
   color: theme('colors.zinc.400');
-}
+} */

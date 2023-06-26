@@ -2,3 +2,26 @@
 @import 'tailwindcss/components';
 @import './prism.css';
 @import 'tailwindcss/utilities';
+
+@layer base {
+  @font-face {
+    font-family: FT88Regular;
+    src: url(/src/fonts/FT88-Regular.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'FT88 Italic';
+    src: url(/src/fonts/FT88-Italic.otf) format('otf');
+  }
+  @font-face {
+    font-family: FT88 Bold;
+    src: url(/src/fonts/FT88-Bold.otf) format('otf');
+  }
+  @font-face {
+    font-family: FT88 Expanded;
+    src: url(/src/fonts/FT88-Expanded.otf) format('otf');
+  }
+  @font-face {
+    font-family: FT88 Serif;
+    src: url(/src/fonts/FT88-Serif.otf) format('otf');
+  }
+}

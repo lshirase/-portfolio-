@@ -19,6 +19,14 @@ module.exports = {
       '8xl': ['6rem', { lineHeight: '1' }],
       '9xl': ['8rem', { lineHeight: '1' }],
     },
+    fontFamily: {
+      'ft-reg': ['var(--font-ftreg)', 'ui-monospace'],
+      'ft-italic': ['var(--font-ftitalic)', 'ui-monospace'],
+      'ft-bold': ['var(--font-ftbold)', 'ui-monospace'],
+      'ft-expanded': ['var(--font-ftexpand)', 'ui-monospace'],
+      'ft-serif': ['var(--font-ftserif)', 'ui-monospace'],
+    },
+    colors: { white: '#FCFCFC', blue: '#0500FF' },
     typography: (theme) => ({
       invert: {
         css: {
