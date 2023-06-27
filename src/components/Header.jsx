@@ -15,7 +15,7 @@ export function Header() {
 
   return (
     <div className="12 relative px-6 py-7 sm:px-12">
-      <header className="bg-white">
+      <header className="">
         <div className="">
           <div className="flex ">
             <div className="">
@@ -31,9 +31,9 @@ export function Header() {
                 </div>
               </Link>
             </div>
-            <div> &#123; about &#125;</div>
+            <div className="font-ft-italic text-xs"> &#123;about&#125;</div>
           </div>
-          <div className="py-4 font-ft-reg">
+          <div className="pt-4 font-ft-reg text-xs">
             <div>design + creative code</div>
             <div>graphically inclined nostalgia merchant</div>
           </div>

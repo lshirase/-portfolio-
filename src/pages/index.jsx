@@ -85,7 +85,7 @@ function Resume() {
   ]
 
   return (
-    <div className="border-zinc-100 dark:border-zinc-700/40 rounded-2xl border p-6">
+    <div className="border-zinc-100 dark:border-zinc-700/40 'var(--font-ftreg) rounded-2xl border  p-6">
       <h2 className="text-zinc-900 dark:text-zinc-100 flex text-sm font-semibold">
         <span className="ml-3">Work</span>
       </h2>
@@ -168,10 +168,12 @@ export default function Home({ articles }) {
         />
       </Head>
       <div className="h-full w-full">
-        <div className="flex flex-col justify-between px-6 sm:px-12">
-          <div className="font-ft-italic">selected work</div>
+        <div className="flex flex-col justify-between px-6 text-xs sm:px-12">
+          <div className="font-ft-italic text-sm">selected work</div>
           <ol className="font-ft-serif">
-            <li>1. co-op solutions</li>
+            <Link href="projects">
+              <li>1. co-op solutions</li>
+            </Link>
             <li>2. wrld3d</li>
             <li>3. nfl + verizon</li>
             <li>4. millcross coffee</li>
