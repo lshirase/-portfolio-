@@ -48,13 +48,11 @@ export default function App({ Component, pageProps, router }) {
   return (
     <>
       <div
-        className={`${ftreg.variable} ${ftitalic.variable} ${ftbold.variable} ${ftserif.variable} ${ftexpand.variable} relative sm:h-screen sm:w-screen`}
+        className={`${ftreg.variable} ${ftitalic.variable} ${ftbold.variable} ${ftserif.variable} ${ftexpand.variable} relative`}
       >
-        <Header />
         <main className="">
           <Component previousPathname={previousPathname} {...pageProps} />
         </main>
-        {/* <Footer /> */}
       </div>
     </>
   )

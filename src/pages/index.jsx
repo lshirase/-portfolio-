@@ -25,6 +25,8 @@ import placeholder from '@/images/placeholder.png'
 import { formatDate } from '@/lib/formatDate'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
+import { Header } from '@/components/Header'
+import { LinkHover } from '@/components/LinkHover'
 
 function Article({ article }) {
   return (
@@ -167,17 +169,35 @@ export default function Home({ articles }) {
           content="Len Shirase, I'm a designer and developer based in Los Angeles, California."
         />
       </Head>
-      <div className="h-full w-full">
-        <div className="flex flex-col justify-between px-6 text-xs sm:px-12">
+      <div className="sm:h-screen sm:w-screen">
+        <Header bgWhite />
+        <div className="inline-flex flex-none flex-col px-6 text-xs sm:px-12">
           <div className="font-ft-italic text-sm">selected work</div>
-          <ol className="font-ft-serif">
-            <Link href="projects">
+          <ol className="z-50 font-ft-serif">
+            {/* <Link href="coop" passHref>
               <li>1. co-op solutions</li>
-            </Link>
-            <li>2. wrld3d</li>
-            <li>3. nfl + verizon</li>
-            <li>4. millcross coffee</li>
-            <li>5. various graphics</li>
+            </Link> */}
+            <LinkHover
+              link="coop"
+              imageSrc={placeholder}
+              text="1. co-op solutions"
+            />
+            <LinkHover link="coop" imageSrc={placeholder} text="2. wrld3d" />
+            <LinkHover
+              link="coop"
+              imageSrc={placeholder}
+              text="3. nfl + verizon"
+            />
+            <LinkHover
+              link="coop"
+              imageSrc={placeholder}
+              text="4. millcross coffee"
+            />
+            <LinkHover
+              link="coop"
+              imageSrc={placeholder}
+              text="5. various graphics"
+            />
           </ol>
         </div>
         <div className=" flex items-center justify-center py-28">

@@ -5,29 +5,48 @@ import { useRouter } from 'next/router'
 import { Popover, Transition } from '@headlessui/react'
 import len1 from '@/images/lenblack.png'
 import len2 from '@/images/lenwhite.png'
+import TextScrambler from './TextScrambler'
 
 import clsx from 'clsx'
 
 // simple header component that shows logo on the left
 // make it sticky to the top of the page
-export function Header() {
+export function Header({ bgWhite }) {
   const router = useRouter()
+  const texts = [
+    'design + creative code',
+    'product design + front-end development',
+    'ux design + research',
+  ]
 
   return (
-    <div className="12 relative px-6 py-7 sm:px-12">
+    <div
+      className={
+        ' relative px-6 py-7 sm:px-12 ' +
+        (bgWhite ? 'text-black' : 'text-white')
+      }
+    >
       <header className="">
         <div className="">
           <div className="flex ">
             <div className="">
               <Link href="/" passHref>
                 <div className="flex items-center">
-                  <Image
-                    alt="len shirase"
-                    className="rounded-full"
-                    width={323}
-                    height={38}
-                    src={len1}
-                  />
+                  {bgWhite ? (
+                    <Image
+                      alt="len shirase"
+                      width={323}
+                      height={38}
+                      src={len1}
+                    />
+                  ) : (
+                    <Image
+                      alt="len shirase"
+                      width={323}
+                      height={38}
+                      src={len2}
+                    />
+                  )}
                 </div>
               </Link>
             </div>
@@ -36,6 +55,7 @@ export function Header() {
           <div className="pt-4 font-ft-reg text-xs">
             <div>design + creative code</div>
             <div>graphically inclined nostalgia merchant</div>
+            <TextScrambler texts={texts} />
           </div>
         </div>
       </header>

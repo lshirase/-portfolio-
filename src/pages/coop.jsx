@@ -8,6 +8,7 @@ import logoCosmos from '@/images/logos/cosmos.svg'
 import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
+import { Header } from '@/components/Header'
 
 const projects = [
   {
@@ -58,17 +59,21 @@ function LinkIcon(props) {
   )
 }
 
-export default function Projects() {
+export default function Coop() {
   return (
     <>
       <Head>
-        <title>Projects - Spencer Sharp</title>
+        <title>len shirase co-op solutions</title>
         <meta
           name="description"
-          content="Things I’ve made trying to put my dent in the universe."
+          content="All of my projects with Co-op Solutions."
         />
       </Head>
-      <SimpleLayout
+      <div className="bg-blue sm:h-screen sm:w-screen">
+        <Header />
+        <div className="px-6 text-xs sm:px-12">yo</div>
+      </div>
+      {/* <SimpleLayout
         title="Things I’ve made trying to put my dent in the universe."
         intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
       >
@@ -97,7 +102,8 @@ export default function Projects() {
             </Card>
           ))}
         </ul>
-      </SimpleLayout>
+
+      </SimpleLayout> */}
     </>
   )
 }
