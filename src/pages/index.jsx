@@ -27,7 +27,7 @@ import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { Header } from '@/components/Header'
 import { LinkHover } from '@/components/LinkHover'
-
+import AsciiSketch1 from '@/components/AsciiSketch1'
 function Article({ article }) {
   return (
     <Card as="article">
@@ -201,8 +201,8 @@ export default function Home({ articles }) {
           </ol>
         </div>
         <div className=" flex items-center justify-center py-28">
-          <Image src={placeholder} alt="" />
-          {/* <AsciiImages /> */}
+          {/* <Image src={placeholder} alt="" /> */}
+          <AsciiSketch1 />
         </div>
       </div>
       {/* <Container className="mt-24 md:mt-28">
