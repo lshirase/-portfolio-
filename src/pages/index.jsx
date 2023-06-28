@@ -200,7 +200,7 @@ export default function Home({ articles }) {
             />
           </ol>
         </div>
-        <div className=" flex items-center justify-center py-28">
+        <div className="flex items-center justify-center py-28">
           {/* <Image src={placeholder} alt="" /> */}
           <AsciiSketch1 />
         </div>

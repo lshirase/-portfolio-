@@ -1,6 +1,6 @@
 import RendererAscii from '@/components/RendererAscii'
 import dynamic from 'next/dynamic'
-import { useCallback } from 'react'
+import { useCallback, useRef, useEffect } from 'react'
 
 let scene
 let images = []
@@ -12,8 +12,6 @@ const Sketch = dynamic(() => import('react-p5').then((mod) => mod.default), {
 
 const AsciiSketch1 = (props) => {
   const preload = (p5) => {
-    // images[1] = p5.loadImage("./tiger.jpg");
-
     images[1] = {
       img: p5.loadImage('./magic.jpg'),
       charset: '*1+3-4^5>6<7~8=9 ',
@@ -24,6 +22,7 @@ const AsciiSketch1 = (props) => {
       scale1: 0.85,
       scale2: 0.9,
     }
+
     images[2] = {
       img: p5.loadImage('./tulip.jpg'),
       charset: '*1+3-4^5>6<7~8=9 ',
@@ -34,6 +33,7 @@ const AsciiSketch1 = (props) => {
       scale1: 0.99,
       scale2: 1.0,
     }
+
     images[3] = {
       img: p5.loadImage('./dinho.jpg'),
       charset: '▗A▘0▜B▟1▙C▄2▀D▐3▌E▞4▚F▝5',
@@ -44,6 +44,7 @@ const AsciiSketch1 = (props) => {
       scale1: 0.99,
       scale2: 1.0,
     }
+
     images[4] = {
       img: p5.loadImage('./tiger.jpg'),
       charset: ' ._▂▃▄▀▀▅▆▇░░▒▓█░',
@@ -59,9 +60,8 @@ const AsciiSketch1 = (props) => {
   }
 
   const setup = (p5, canvasParentRef) => {
-    p5.createCanvas(650, 650).parent(canvasParentRef)
+    const canvas = p5.createCanvas(650, 650).parent(canvasParentRef)
     scene = p5.createGraphics(p5.width, p5.height)
-    // p5.frameRate(60);
   }
 
   const draw = useCallback((p5) => {
@@ -69,9 +69,6 @@ const AsciiSketch1 = (props) => {
 
     scene.push()
     scene.translate(p5.width / 2, p5.height / 2)
-    // scene.scale(p5.map(p5.sin(p5.radians(p5.frameCount * 2)), -1, 1, 0, 2));
-    // scene.scale(p5.map(p5.sin(p5.radians(p5.frameCount * 2)), -1, 1, 0, 2));
-    // let scale = p5.map(Math.sin(p5.frameCount / 10), -1, 1, 0.94, 0.95);
     let scale = p5.map(
       Math.sin(p5.frameCount / 10),
       -1,
@@ -96,16 +93,11 @@ const AsciiSketch1 = (props) => {
       images[Object.keys(images)[counter]].bg, // background color
       images[Object.keys(images)[counter]].fg // foreground color
     )
-    // if (scale <= 0.016) {
-    //   counter = (counter + 1) % Object.keys(images).length;
-    // }
   }, [])
 
-  const mouseClicked = (p5, event) => {
+  const handleClick = () => {
     scene.clear()
-
     scene.remove()
-
     counter = (counter + 1) % Object.keys(images).length
   }
 
@@ -115,7 +107,7 @@ const AsciiSketch1 = (props) => {
         setup={setup}
         draw={draw}
         preload={preload}
-        mouseClicked={mouseClicked}
+        mouseClicked={handleClick}
       />
     </>
   )
