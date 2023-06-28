@@ -23,7 +23,7 @@ const TextScrambler = ({ texts }) => {
     if (isHovered) {
       intervalId = setInterval(() => {
         setScrambledText(scrambleText(texts[currentTextIndex]))
-      }, 10)
+      }, 30)
     } else {
       clearInterval(intervalId)
       setScrambledText(texts[currentTextIndex])
@@ -36,7 +36,8 @@ const TextScrambler = ({ texts }) => {
 
   const getRandomCharacter = () => {
     const characters =
-      'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
+      //   'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
+      '*1+3-4^5>6<7~8=9abcVWXYZ '
     const randomIndex = Math.floor(Math.random() * characters.length)
     return characters[randomIndex]
   }
@@ -51,7 +52,11 @@ const TextScrambler = ({ texts }) => {
   }
 
   return (
-    <span onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <span
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      className="cursor-default"
+    >
       {scrambledText}
     </span>
   )

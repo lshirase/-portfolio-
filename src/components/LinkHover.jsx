@@ -5,8 +5,6 @@ import Link from 'next/link'
 export function LinkHover({ link, imageSrc, text }) {
   const [isHovered, setIsHovered] = useState(false)
   const [position, setPosition] = useState({ x: 0, y: 0 })
-  const img = imageSrc
-  console.log(img)
 
   const handleHover = () => {
     setIsHovered(!isHovered)

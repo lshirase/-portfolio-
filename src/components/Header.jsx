@@ -53,9 +53,8 @@ export function Header({ bgWhite }) {
             <div className="font-ft-italic text-xs"> &#123;about&#125;</div>
           </div>
           <div className="pt-4 font-ft-reg text-xs">
-            <div>design + creative code</div>
-            <div>graphically inclined nostalgia merchant</div>
             <TextScrambler texts={texts} />
+            <div>graphically inclined nostalgia merchant</div>
           </div>
         </div>
       </header>

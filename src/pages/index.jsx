@@ -202,6 +202,7 @@ export default function Home({ articles }) {
         </div>
         <div className=" flex items-center justify-center py-28">
           <Image src={placeholder} alt="" />
+          {/* <AsciiImages /> */}
         </div>
       </div>
       {/* <Container className="mt-24 md:mt-28">
