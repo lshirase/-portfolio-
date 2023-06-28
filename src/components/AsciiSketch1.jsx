@@ -21,6 +21,7 @@ const AsciiSketch1 = (props) => {
       cols: 90,
       scale1: 0.85,
       scale2: 0.9,
+      colors: ['#ff0000', '#ffa500', '#ffff00', '#008000'],
     }
 
     images[2] = {
@@ -32,6 +33,7 @@ const AsciiSketch1 = (props) => {
       cols: 90,
       scale1: 0.99,
       scale2: 1.0,
+      colors: ['#000000'],
     }
 
     images[3] = {
@@ -43,17 +45,19 @@ const AsciiSketch1 = (props) => {
       cols: 90,
       scale1: 0.99,
       scale2: 1.0,
+      colors: ['EDBB00', '#004D98', '#FFED02 ', '#000000'],
     }
 
     images[4] = {
       img: p5.loadImage('./tiger.jpg'),
       charset: ' ._▂▃▄▀▀▅▆▇░░▒▓█░',
-      bg: 'white',
+      bg: 'black',
       fg: '#BC002D',
       rows: 90,
       cols: 90,
       scale1: 0.99,
       scale2: 1.0,
+      colors: ['#ff0000', '#ffa500', '#ffff00', '#008000'],
     }
 
     p5.disableFriendlyErrors = true // disables FES
@@ -62,6 +66,7 @@ const AsciiSketch1 = (props) => {
   const setup = (p5, canvasParentRef) => {
     const canvas = p5.createCanvas(650, 650).parent(canvasParentRef)
     scene = p5.createGraphics(p5.width, p5.height)
+    p5.frameRate(4)
   }
 
   const draw = useCallback((p5) => {
@@ -91,11 +96,12 @@ const AsciiSketch1 = (props) => {
       images[Object.keys(images)[counter]].rows, // rows
       p5.width * 0.3, // spread
       images[Object.keys(images)[counter]].bg, // background color
-      images[Object.keys(images)[counter]].fg // foreground color
+      images[Object.keys(images)[counter]].fg, // foreground color
+      images[Object.keys(images)[counter]].colors // color palette
     )
   }, [])
 
-  const handleClick = () => {
+  const handleClick = (e) => {
     scene.clear()
     scene.remove()
     counter = (counter + 1) % Object.keys(images).length

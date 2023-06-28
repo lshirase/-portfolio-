@@ -204,10 +204,11 @@ const RendererAscii = (
   tilesY, // the amount of rows
   spread, // the magnitude of the grid from the center
   bg, // the background-color
-  fg // the foreground-color
+  fg, // the foreground-color
+  colorp // the color palette
 ) => {
   let pg
-  let colors = ['#ff0000', '#ffa500', '#ffff00', '#008000']
+  let colors = colorp
 
   pg = p5.createGraphics(p5.width, p5.height)
   pg.background(bg)
