@@ -200,9 +200,7 @@ export default function Home({ articles }) {
             />
           </ol>
         </div>
-        <div className="flex items-center justify-center py-28">
-          {/* <Image src={placeholder} alt="" /> */}
-          {/* <AsciiSketch1 /> */}
+        <div className="flex items-center justify-center pt-2 sm:py-28 sm:pt-0">
           <VideoPlayer />
         </div>
       </div>

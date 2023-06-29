@@ -22,7 +22,7 @@ export function Header({ bgWhite }) {
   return (
     <div
       className={
-        ' relative px-6 py-7 sm:px-12 ' +
+        ' relative px-6 pt-7 sm:px-12 sm:py-7 ' +
         (bgWhite ? 'text-black' : 'text-white')
       }
     >
