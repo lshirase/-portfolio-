@@ -51,9 +51,15 @@ const VideoPlayer = () => {
   }, [nextSrc])
 
   return (
-    <div>
-      <video src={src} autoPlay muted loop onClick={handleClick} width="400" height="400"/>
-    </div>
+    <video
+      src={src}
+      autoPlay
+      muted
+      loop
+      onClick={handleClick}
+      width="400"
+      height="400"
+    />
   )
 }
 
