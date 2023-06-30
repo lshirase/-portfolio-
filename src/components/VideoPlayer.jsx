@@ -37,6 +37,7 @@ const VideoPlayer = () => {
         autoPlay
         muted
         loop
+        playsInline
         onClick={handleClick}
         type="video/webm"
       />
