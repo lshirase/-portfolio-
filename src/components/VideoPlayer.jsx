@@ -6,22 +6,21 @@ const VideoPlayer = () => {
   const [currentIndex, setCurrentIndex] = useState(
     Math.floor(Math.random() * 4)
   )
-  const [src, setSrc] = useState(videos[currentIndex])
-  const nextIndex = (currentIndex + 1) % videos.length
-  const nextSrc = videos[nextIndex]
+  const [isLoaded, setIsLoaded] = useState(false)
+  const src = videos[currentIndex]
 
   const handleClick = () => {
-    setCurrentIndex(nextIndex)
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % videos.length)
   }
 
   useEffect(() => {
     const nextVideo = document.createElement('video')
-    nextVideo.src = nextSrc
+    nextVideo.src = videos[(currentIndex + 1) % videos.length]
     nextVideo.preload = 'auto'
 
-    nextVideo.addEventListener('loadeddata', () => {
+    nextVideo.addEventListener('canplaythrough', () => {
+      setIsLoaded(true)
       nextVideo.remove()
-      setSrc(nextSrc)
     })
 
     document.body.appendChild(nextVideo)
@@ -29,11 +28,18 @@ const VideoPlayer = () => {
     return () => {
       nextVideo.remove()
     }
-  }, [nextSrc])
+  }, [currentIndex])
 
   return (
     <div className="w-full pt-4 sm:w-1/2 md:w-1/2 lg:w-1/4">
-      <video src={src} autoPlay muted loop onClick={handleClick} playsInline />
+      <video
+        src={src}
+        autoPlay
+        muted
+        loop
+        onClick={handleClick}
+        type="video/webm"
+      />
     </div>
   )
 }
