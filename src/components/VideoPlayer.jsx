@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react'
 
-const videos = ['/magic2.webm', '/tulip2.webm', '/dinho1.webm', '/tiger3.webm']
-
-const VideoPlayer = () => {
+const VideoPlayer = ({ videos, type }) => {
   const [currentIndex, setCurrentIndex] = useState(
-    Math.floor(Math.random() * 4)
+    Math.floor(Math.random() * videos.length)
   )
   const [isLoaded, setIsLoaded] = useState(false)
   const src = videos[currentIndex]
@@ -28,7 +26,7 @@ const VideoPlayer = () => {
     return () => {
       nextVideo.remove()
     }
-  }, [currentIndex])
+  }, [currentIndex, videos])
 
   return (
     <div className="w-full pt-4 sm:w-1/2 md:w-1/2 lg:w-1/4">
@@ -39,7 +37,7 @@ const VideoPlayer = () => {
         loop
         playsInline
         onClick={handleClick}
-        type="video/webm"
+        type={type}
       />
     </div>
   )

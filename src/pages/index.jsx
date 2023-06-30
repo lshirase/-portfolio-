@@ -28,6 +28,15 @@ import { getAllArticles } from '@/lib/getAllArticles'
 import { Header } from '@/components/Header'
 import { LinkHover } from '@/components/LinkHover'
 import VideoPlayer from '@/components/VideoPlayer'
+
+const videos = ['/magic2.webm', '/tulip2.webm', '/dinho1.webm', '/tiger3.webm']
+const movideos = [
+  '/momagic2.mp4',
+  '/motulip2.mp4',
+  '/modinho1.mp4',
+  '/motiger3.mp4',
+]
+
 function Article({ article }) {
   return (
     <Card as="article">
@@ -202,8 +211,11 @@ export default function Home({ articles }) {
             </ol>
           </div>
         </div>
-        <div className="flex flex-grow flex-col items-center justify-center">
-          <VideoPlayer className="shrink" />
+        <div className="hidden flex-grow flex-col items-center justify-center md:flex">
+          <VideoPlayer className="shrink" videos={videos} type="video/webm" />
+        </div>
+        <div className="flex flex-grow flex-col items-center justify-center md:hidden">
+          <VideoPlayer className="shrink" videos={movideos} type="video/mp4" />
         </div>
       </div>
       {/* <Container className="mt-24 md:mt-28">
