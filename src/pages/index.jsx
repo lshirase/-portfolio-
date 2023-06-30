@@ -169,39 +169,41 @@ export default function Home({ articles }) {
           content="Len Shirase, I'm a designer and developer based in Los Angeles, California."
         />
       </Head>
-      <div className="sm:h-screen sm:w-screen">
+      <div className="flex h-screen w-screen flex-col">
         <Header bgWhite />
-        <div className="inline-flex flex-none flex-col px-6 text-xs sm:px-12">
-          <div className="font-ft-italic text-sm">selected work</div>
-          <ol className="z-50 font-ft-serif">
-            {/* <Link href="coop" passHref>
+        <div className="inline-flex flex-none flex-row px-6 pt-4 text-xs sm:px-12 sm:pt-0">
+          <div className="flex-col">
+            <div className="font-ft-italic text-sm">selected work</div>
+            <ol className="z-50 font-ft-serif">
+              {/* <Link href="coop" passHref>
               <li>1. co-op solutions</li>
             </Link> */}
-            <LinkHover
-              link="coop"
-              imageSrc={placeholder}
-              text="1. co-op solutions"
-            />
-            <LinkHover link="coop" imageSrc={placeholder} text="2. wrld3d" />
-            <LinkHover
-              link="coop"
-              imageSrc={placeholder}
-              text="3. nfl + verizon"
-            />
-            <LinkHover
-              link="coop"
-              imageSrc={placeholder}
-              text="4. millcross coffee"
-            />
-            <LinkHover
-              link="coop"
-              imageSrc={placeholder}
-              text="5. various graphics"
-            />
-          </ol>
+              <LinkHover
+                link="coop"
+                imageSrc={placeholder}
+                text="1. co-op solutions"
+              />
+              <LinkHover link="coop" imageSrc={placeholder} text="2. wrld3d" />
+              <LinkHover
+                link="coop"
+                imageSrc={placeholder}
+                text="3. nfl + verizon"
+              />
+              <LinkHover
+                link="coop"
+                imageSrc={placeholder}
+                text="4. millcross coffee"
+              />
+              <LinkHover
+                link="coop"
+                imageSrc={placeholder}
+                text="5. various graphics"
+              />
+            </ol>
+          </div>
         </div>
-        <div className="flex items-center justify-center pt-2 sm:py-28 sm:pt-0">
-          <VideoPlayer />
+        <div className="flex flex-grow flex-col items-center justify-center">
+          <VideoPlayer className="shrink" />
         </div>
       </div>
       {/* <Container className="mt-24 md:mt-28">
