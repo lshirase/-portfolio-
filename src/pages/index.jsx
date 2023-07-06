@@ -207,7 +207,7 @@ export default function Home({ articles }) {
           </div>
         </div>
         <div className="hidden flex-grow flex-col items-center justify-center md:flex">
-          <VideoPlayer className="shrink" videos={videos} type="video/webm" />
+          <VideoPlayer videos={videos} type="video/webm" />
         </div>
         <div className="flex flex-grow flex-col items-center justify-center md:hidden">
           <VideoPlayerMobile />
