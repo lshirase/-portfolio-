@@ -178,7 +178,7 @@ export default function Home({ articles }) {
           content="Len Shirase, I'm a designer and developer based in Los Angeles, California."
         />
       </Head>
-      <div className="flex flex-col md:h-screen md:w-screen ">
+      <div className="flex h-screen flex-col md:w-screen ">
         <Header bgWhite />
         <div className="inline-flex flex-none flex-row px-6 pt-4 text-xs sm:px-12 sm:pt-0">
           <div className="flex-col">
