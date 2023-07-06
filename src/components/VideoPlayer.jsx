@@ -13,6 +13,7 @@ const VideoPlayer = ({ videos, type }) => {
 
   useEffect(() => {
     const nextVideo = document.createElement('video')
+    nextVideo.classList.add('hidden')
     nextVideo.src = videos[(currentIndex + 1) % videos.length]
     nextVideo.preload = 'auto'
 
