@@ -17,7 +17,7 @@ const VideoPlayerMobile = () => {
   }
 
   return (
-    <div className="block w-full pt-4">
+    <div className="block h-auto w-full overflow-hidden pt-4">
       <video
         src={src}
         autoPlay
