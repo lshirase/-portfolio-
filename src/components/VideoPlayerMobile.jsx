@@ -17,15 +17,17 @@ const VideoPlayerMobile = () => {
   }
 
   return (
-    <video
-      src={src}
-      autoPlay
-      muted
-      loop
-      onClick={handleClick}
-      playsInline
-      preload="metadata"
-    />
+    <div className="block w-full pt-4">
+      <video
+        src={src}
+        autoPlay
+        muted
+        loop
+        onClick={handleClick}
+        playsInline
+        preload="metadata"
+      />
+    </div>
   )
 }
 
