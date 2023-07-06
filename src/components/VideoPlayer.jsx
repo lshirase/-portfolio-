@@ -29,7 +29,7 @@ const VideoPlayer = ({ videos, type }) => {
   }, [currentIndex, videos])
 
   return (
-    <div className="w-full pt-4 sm:w-1/2 md:w-1/2 lg:w-1/4">
+    <div className="w-full overflow-hidden pt-4 sm:w-1/2 md:w-1/2 lg:w-1/4">
       <video
         src={src}
         autoPlay
