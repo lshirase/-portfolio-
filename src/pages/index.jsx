@@ -211,10 +211,10 @@ export default function Home({ articles }) {
             </ol>
           </div>
         </div>
-        <div className="hidden flex-grow flex-col items-center justify-center md:flex">
+        {/* <div className="hidden flex-grow flex-col items-center justify-center md:flex">
           <VideoPlayer className="shrink" videos={videos} type="video/webm" />
-        </div>
-        <div className="flex flex-grow flex-col items-center justify-center md:hidden">
+        </div> */}
+        <div className="flex flex-grow flex-col items-center justify-center">
           <VideoPlayer className="shrink" videos={movideos} type="video/mp4" />
         </div>
       </div>

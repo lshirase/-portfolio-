@@ -15,10 +15,7 @@ export default function Document() {
           href={`${process.env.NEXT_PUBLIC_SITE_URL}/rss/feed.json`}
         />
       </Head>
-      <body
-        className="bg-zinc-5 flex h-full flex-col md:h-screen
-      "
-      >
+      <body className="flex h-full flex-col">
         <Main />
         <NextScript />
       </body>
