@@ -8,7 +8,9 @@ const videos = [
 ]
 
 const VideoPlayerMobile = () => {
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(
+    Math.floor(Math.random() * videos.length)
+  )
   const [src, setSrc] = useState(videos[currentIndex])
 
   const handleClick = () => {

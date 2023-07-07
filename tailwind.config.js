@@ -25,6 +25,9 @@ module.exports = {
       'ft-bold': ['var(--font-ftbold)', 'ui-monospace'],
       'ft-expanded': ['var(--font-ftexpand)', 'ui-monospace'],
       'ft-serif': ['var(--font-ftserif)', 'ui-monospace'],
+      'ikob-reg': ['var(--font-ikobreg)', 'serif'],
+      'ikob-italic': ['var(--font-ikobitalic)', 'serif'],
+      'ikob-bold': ['var(--font-ikobbold)', 'serif'],
     },
     colors: { white: '#FCFCFC', blue: '#0500FF' },
     typography: (theme) => ({

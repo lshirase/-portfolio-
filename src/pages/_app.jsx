@@ -32,6 +32,21 @@ const ftexpand = localFont({
   variable: '--font-ftexpand',
 })
 
+const ikobreg = localFont({
+  src: '../../src/fonts/happy-times-NG_regular_master_web.woff2',
+  variable: '--font-ikobreg',
+})
+
+const ikobitalic = localFont({
+  src: '../../src/fonts/happy-times-NG_italic_master_web.woff2',
+  variable: '--font-ikobitalic',
+})
+
+const ikobbold = localFont({
+  src: '../../src/fonts/happy-times-NG_bold_master_web.woff2',
+  variable: '--font-ikobbold',
+})
+
 function usePrevious(value) {
   let ref = useRef()
 
@@ -48,7 +63,7 @@ export default function App({ Component, pageProps, router }) {
   return (
     <>
       <div
-        className={`${ftreg.variable} ${ftitalic.variable} ${ftbold.variable} ${ftserif.variable} ${ftexpand.variable} relative`}
+        className={`${ftreg.variable} ${ftitalic.variable} ${ftbold.variable} ${ftserif.variable} ${ftexpand.variable} ${ikobreg.variable} ${ikobitalic.variable} ${ikobbold.variable}relative`}
       >
         <main className="">
           <Component previousPathname={previousPathname} {...pageProps} />

@@ -5,13 +5,7 @@ import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
-import { Container } from '@/components/Container'
-import {
-  GitHubIcon,
-  InstagramIcon,
-  LinkedInIcon,
-  TwitterIcon,
-} from '@/components/SocialIcons'
+
 import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
@@ -178,10 +172,7 @@ export default function Home({ articles }) {
         <div className="inline-flex flex-none flex-row px-6 pt-4 text-xs sm:px-12 sm:pt-0">
           <div className="flex-col">
             <div className="font-ft-italic text-sm">selected work</div>
-            <ol className="z-50 font-ft-serif">
-              {/* <Link href="coop" passHref>
-              <li>1. co-op solutions</li>
-            </Link> */}
+            <ol className="z-50 hidden font-ft-serif md:block">
               <LinkHover
                 link="coop"
                 imageSrc={placeholder}
@@ -203,6 +194,23 @@ export default function Home({ articles }) {
                 imageSrc={placeholder}
                 text="5. various graphics"
               />
+            </ol>
+            <ol className="z-50 font-ft-serif md:hidden">
+              <Link href="coop" passHref>
+                <li>1. co-op solutions</li>
+              </Link>
+              <Link href="coop" passHref>
+                <li>2. wrld3d</li>
+              </Link>
+              <Link href="coop" passHref>
+                <li>3. nfl + verizon</li>
+              </Link>
+              <Link href="coop" passHref>
+                <li>4. millcross coffee</li>
+              </Link>
+              <Link href="coop" passHref>
+                <li>5. various graphics</li>
+              </Link>
             </ol>
           </div>
         </div>
