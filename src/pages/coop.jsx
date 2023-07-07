@@ -91,24 +91,24 @@ export default function Coop() {
                   supporting their members with industry-leading ATM, digital
                   payment, security, and marketing services.
                 </div>
-                <div className="flex flex-row">
+                <div className="flex flex-row py-10">
                   <div className="text-base">
-                    <h4 className="font-ft-bold">Role(s)</h4>
+                    <h4 className="pb-2 font-ft-bold">Role(s)</h4>
                     <div className="font-ikob-reg">
                       <p>Product Designer</p>
                       <p>Front-end Engineer</p>
                       <p> Product Manager</p>
                     </div>
                   </div>
-                  <div className="text-base">
-                    <h4 className="font-ft-bold">Duration</h4>
+                  <div className="pl-14 text-base">
+                    <h4 className="pb-2 font-ft-bold">Duration</h4>
                     <div className="font-ikob-reg">
                       <p>March 2021 - February 2023</p>
                     </div>
                   </div>
                 </div>
                 <div className="text-base">
-                  <h4 className="font-ft-bold">About</h4>
+                  <h4 className="pb-2 font-ft-bold">About</h4>
                   <div className="font-ikob-reg">
                     For two-ish years, I was the primary design consultant (and
                     secondary development consultant) for the redesign of
