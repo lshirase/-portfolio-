@@ -50,20 +50,24 @@ export default function Coop() {
                     isSectionActive('insights') ? 'font-ft-bold text-green' : ''
                   }
                 >
-                  <li>1. co-op solutions</li>
+                  <li>1. overview</li>
                 </div>
-                <Link href="coop" passHref>
-                  <li>2. wrld3d</li>
-                </Link>
-                <Link href="coop" passHref>
-                  <li>3. nfl + verizon</li>
-                </Link>
-                <Link href="coop" passHref>
-                  <li>4. millcross coffee</li>
-                </Link>
-                <Link href="coop" passHref>
-                  <li>5. various graphics</li>
-                </Link>
+                <div
+                  onClick={() => handleSectionChange('data')}
+                  className={
+                    isSectionActive('data') ? 'font-ft-bold text-green' : ''
+                  }
+                >
+                  <li>2. filtering and data</li>
+                </div>
+                <div
+                  onClick={() => handleSectionChange('sg')}
+                  className={
+                    isSectionActive('sg') ? 'font-ft-bold text-green' : ''
+                  }
+                >
+                  <li>3. smartgrowth</li>
+                </div>
               </ol>
             </div>
           </div>
@@ -118,7 +122,9 @@ export default function Coop() {
                 </div>
               </>
             )}
-            {activeSection === 'insights' && <InsightsOverview />}
+            {activeSection === 'insights' && (
+              <InsightsOverview handleSectionChange={handleSectionChange} />
+            )}
           </div>
         </div>
       </div>
