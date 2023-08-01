@@ -3,6 +3,7 @@ import overview1 from '@/images/overview/overview1.png'
 import overview7 from '@/images/overview/overview7.png'
 import data1 from '@/images/data/data1.png'
 import data2 from '@/images/data/data2.png'
+import data3 from '@/images/data/data3.png'
 
 export function InsightsData({ handleSectionChange }) {
   return (
@@ -84,6 +85,100 @@ export function InsightsData({ handleSectionChange }) {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* section 2 */}
+        <div className="flex flex-1">
+          <div className="flex flex-col items-baseline py-4 md:flex-row">
+            <div className="baseline font-ft-bold text-xl md:w-1/4">
+              Data -&gt; Arch
+            </div>
+            <div className="flex flex-1 flex-col">
+              <div className="pb-6">
+                <div className="baseline font-ft-reg text-base">
+                  Setting the Foundation
+                </div>
+
+                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                  Translating the tree into IA
+                </div>
+                <div className="font-ikob-reg text-base">
+                  Early on, this was still a rudimentary understanding but it
+                  allowed us to think about how our reporting interface would
+                  function in relation to the data.
+                </div>
+              </div>
+              <div className="flex w-full self-center pb-6">
+                <Image
+                  src={data3}
+                  alt="ia overview"
+                  loading="lazy"
+                  className="w-full"
+                />
+              </div>
+              <div className="pb-6">
+                <div className="baseline font-ft-reg text-base">
+                  Setting the Stage
+                </div>
+
+                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                  Report filtering (v1) as the first layer
+                </div>
+                <div className="font-ikob-reg text-base">
+                  In order to have a cohesive report, we made the choice of
+                  having report wide filters available to user, giving the
+                  ability to create sweeping changes instantly. As we began to
+                  learn more about how the data worked and through extensive
+                  user testing, we later revised this design (more on that
+                  later).
+                </div>
+              </div>
+              <video
+                src="https://res.cloudinary.com/dkso10gnx/video/upload/v1690924130/report-filtering-1_g5qevn.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                className="pb-6"
+              />
+
+              {/* <div className="flex w-full">
+                <Image
+                  src={overview1}
+                  alt="updated design"
+                  loading="lazy"
+                  className="w-full"
+                />
+              </div> */}
+
+              <div className="pb-6">
+                <div className="baseline font-ft-reg text-base">
+                  Getting Granular{' '}
+                </div>
+
+                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                  Widgets as the primary driver
+                </div>
+                <div className="font-ikob-reg text-base">
+                  If the report sets the stage, we can use widgets as the
+                  primary method of showcasing data. Knowing that data will
+                  funnel down from the report level filters, we can start
+                  thinking about how data will flow into the widgets and how
+                  users can start creating them.
+                </div>
+              </div>
+              <video
+                src="https://res.cloudinary.com/dkso10gnx/video/upload/v1690924130/Widget_Editing_py4fvt.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                className="pb-6"
+              />
             </div>
           </div>
         </div>
