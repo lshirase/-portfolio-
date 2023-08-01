@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Header } from '@/components/Header'
 import Link from 'next/link'
 import { InsightsOverview } from '@/components/InsightsOverview'
+import { InsightsData } from '@/components/InsightsData'
 
 import { useState } from 'react'
 
@@ -68,6 +69,17 @@ export default function Coop() {
                 >
                   <li>3. smartgrowth</li>
                 </div>
+                <div className="pt-4 font-ft-italic text-sm">
+                  other initiatives
+                </div>
+                <div
+                  onClick={() => handleSectionChange('think')}
+                  className={
+                    isSectionActive('think') ? 'font-ft-bold text-green' : ''
+                  }
+                >
+                  <li>1. think 2023</li>
+                </div>
               </ol>
             </div>
           </div>
@@ -124,6 +136,9 @@ export default function Coop() {
             )}
             {activeSection === 'insights' && (
               <InsightsOverview handleSectionChange={handleSectionChange} />
+            )}
+            {activeSection === 'data' && (
+              <InsightsData handleSectionChange={handleSectionChange} />
             )}
           </div>
         </div>
