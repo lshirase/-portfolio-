@@ -4,6 +4,7 @@ import { Header } from '@/components/Header'
 import Link from 'next/link'
 import { InsightsOverview } from '@/components/InsightsOverview'
 import { InsightsData } from '@/components/InsightsData'
+import { InsightsSg } from '@/components/InsightsSg'
 
 import { useState } from 'react'
 
@@ -84,7 +85,7 @@ export default function Coop() {
             </div>
           </div>
           {/* switch component here */}
-          <div className="flex flex-col md:w-4/5 md:pl-24 lg:pl-60">
+          <div className="flex flex-col md:w-4/5 md:pl-24 lg:w-2/3 lg:pl-60">
             {activeSection === 'coop' && (
               <>
                 <div className="font-ft-bold text-lg md:text-xl">
@@ -139,6 +140,9 @@ export default function Coop() {
             )}
             {activeSection === 'data' && (
               <InsightsData handleSectionChange={handleSectionChange} />
+            )}
+            {activeSection === 'sg' && (
+              <InsightsSg handleSectionChange={handleSectionChange} />
             )}
           </div>
         </div>
