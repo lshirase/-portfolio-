@@ -354,7 +354,7 @@ export function InsightsOverview({ handleSectionChange }) {
                 See a deeper dive of how understanding the data influenced our
                 designs here: <br />
                 <span
-                  onClick={() => handleSectionChange('coop')}
+                  onClick={() => handleSectionChange('data')}
                   className="cursor-pointer text-green hover:text-white"
                 >
                   ”Filtering and Data”
