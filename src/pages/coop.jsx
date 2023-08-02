@@ -1,11 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Header } from '@/components/Header'
-import Link from 'next/link'
 import { InsightsOverview } from '@/components/InsightsOverview'
 import { InsightsData } from '@/components/InsightsData'
 import { InsightsSg } from '@/components/InsightsSg'
-
 import { useState } from 'react'
 
 export default function Coop() {
@@ -49,7 +47,9 @@ export default function Coop() {
                 <div
                   onClick={() => handleSectionChange('insights')}
                   className={
-                    isSectionActive('insights') ? 'font-ft-bold text-green' : ''
+                    isSectionActive('insights')
+                      ? 'font-ft-bold text-green'
+                      : 'hover:text-green'
                   }
                 >
                   <li>1. overview</li>
@@ -57,7 +57,9 @@ export default function Coop() {
                 <div
                   onClick={() => handleSectionChange('data')}
                   className={
-                    isSectionActive('data') ? 'font-ft-bold text-green' : ''
+                    isSectionActive('data')
+                      ? 'font-ft-bold text-green'
+                      : 'hover:text-green'
                   }
                 >
                   <li>2. filtering and data</li>
@@ -65,7 +67,9 @@ export default function Coop() {
                 <div
                   onClick={() => handleSectionChange('sg')}
                   className={
-                    isSectionActive('sg') ? 'font-ft-bold text-green' : ''
+                    isSectionActive('sg')
+                      ? 'font-ft-bold text-green'
+                      : 'hover:text-green'
                   }
                 >
                   <li>3. smartgrowth</li>
@@ -73,13 +77,28 @@ export default function Coop() {
                 <div className="pt-4 font-ft-italic text-sm">
                   other initiatives
                 </div>
-                <div
-                  onClick={() => handleSectionChange('think')}
-                  className={
-                    isSectionActive('think') ? 'font-ft-bold text-green' : ''
-                  }
-                >
-                  <li>1. think 2023</li>
+                <div>
+                  <li>
+                    <a
+                      href={'https://campaigns.coop.org/think-2023/p/1'}
+                      target={'_blank'}
+                      rel="noreferrer"
+                      className="items-top inline-flex cursor-pointer font-ft-serif text-white hover:text-green"
+                    >
+                      1. think 2023
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 30 30"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M21 11V3h-8v2h4v2h-2v2h-2v2h-2v2H9v2h2v-2h2v-2h2V9h2V7h2v4h2zM11 5H3v16h16v-8h-2v6H5V7h6V5z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
                 </div>
               </ol>
             </div>
@@ -98,7 +117,8 @@ export default function Coop() {
                     <h4 className="pb-2 font-ft-bold">Role(s)</h4>
                     <div className="font-ikob-reg">
                       <p>Product Designer</p>
-                      <p>Front-end Engineer</p>
+                      <p>UX Researcher</p>
+                      <p>Front-End Engineer</p>
                       <p> Product Manager</p>
                     </div>
                   </div>
@@ -114,8 +134,14 @@ export default function Coop() {
                   <div className="pb-4 font-ikob-reg md:pb-0">
                     For two-ish years, I was the primary design consultant (and
                     secondary development consultant) for the redesign of
-                    <span className="font-ft-serif"> Insights Center</span>, a
-                    web-based reporting platform that helps credit unions
+                    <span
+                      className="inline-block cursor-pointer font-ft-serif text-green hover:text-white"
+                      onClick={() => handleSectionChange('insights')}
+                    >
+                      {' '}
+                      Insights Center
+                    </span>
+                    , a web-based reporting platform that helps credit unions
                     understand their credit, debit, and ATM portfolios. I
                     initially started the project as a designer but as the
                     project grew, so did I! My domain expanded and my
@@ -123,9 +149,27 @@ export default function Coop() {
                     designer, developer, and a product manager. Thankful for my
                     team and the client for giving me the space to go head first
                     into this new world. I also worked on a couple other fun
-                    projects along the way like the
-                    <span className="font-ft-serif"> THINK 2023 </span>site and
-                    aiding in the development of
+                    projects along the way like{' '}
+                    <a
+                      href={'https://campaigns.coop.org/think-2023/p/1'}
+                      target={'_blank'}
+                      rel="noreferrer"
+                      className="items-top inline-flex cursor-pointer font-ft-serif text-green hover:text-white"
+                    >
+                      THINK 2023
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 22 22"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M21 11V3h-8v2h4v2h-2v2h-2v2h-2v2H9v2h2v-2h2v-2h2V9h2V7h2v4h2zM11 5H3v16h16v-8h-2v6H5V7h6V5z"
+                        />
+                      </svg>
+                    </a>{' '}
+                    site and aiding in the development of
                     <span className="font-ft-serif">
                       {' '}
                       storybook components{' '}
