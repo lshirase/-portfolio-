@@ -55,7 +55,7 @@ const TextScrambler = ({ texts }) => {
     <span
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="cursor-default"
+      className="cursor-cell"
     >
       {scrambledText}
     </span>
