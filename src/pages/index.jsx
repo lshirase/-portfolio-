@@ -178,7 +178,7 @@ export default function Home({ articles }) {
                 imageSrc={placeholder}
                 text="1. co-op solutions"
               />
-              <LinkHover link="coop" imageSrc={placeholder} text="2. wrld3d" />
+              <LinkHover link="wrld" imageSrc={placeholder} text="2. wrld3d" />
               <LinkHover
                 link="coop"
                 imageSrc={placeholder}
