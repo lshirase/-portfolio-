@@ -17,17 +17,17 @@ export function InsightsOverview({ handleSectionChange }) {
           a static reporting to a custom reporting model enabling users to see
           the data they care about, in a way that makes sense for them.
         </div>
-        <div className="flex flex-row py-10">
-          <div className="text-base">
+        <div className="flex  flex-row flex-wrap py-10">
+          <div className="pb-4 text-base">
             <h4 className="pb-2 font-ft-bold">Role(s)</h4>
-            <div className="font-ikob-reg">
+            <div className="pr-14 font-ikob-reg">
               <p>Product Designer</p>
               <p>UX Researcher</p>
               <p>Front-end Engineer</p>
               <p> Product Manager</p>
             </div>
           </div>
-          <div className="pl-14 text-base">
+          <div className="pb-4 pr-14 text-base">
             <h4 className="pb-2 font-ft-bold">Team</h4>
             <div className="font-ikob-reg">
               <p>2 Front-end Engineers, Philosophie</p>
@@ -35,7 +35,7 @@ export function InsightsOverview({ handleSectionChange }) {
               <p>Technical Product Owner, Co-op</p>
             </div>
           </div>
-          <div className="pl-14 text-base">
+          <div className="text-base">
             <h4 className="pb-2 font-ft-bold">Technology</h4>
             <div className="font-ikob-reg">
               <p>Figma, Figjam, Mural</p>

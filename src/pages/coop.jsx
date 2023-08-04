@@ -4,14 +4,20 @@ import { Header } from '@/components/Header'
 import { InsightsOverview } from '@/components/InsightsOverview'
 import { InsightsData } from '@/components/InsightsData'
 import { InsightsSg } from '@/components/InsightsSg'
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 export default function Coop() {
   const [activeSection, setActiveSection] = useState('coop')
+  const sectionRef = useRef(null)
 
   const handleSectionChange = (section) => {
     setActiveSection(section)
   }
+  useEffect(() => {
+    // Scroll to the top of the section when activeSection changes
+    sectionRef.current.scrollIntoView({ behavior: 'smooth' })
+  }, [activeSection])
+
   const isSectionActive = (section) => activeSection === section
 
   return (
@@ -34,6 +40,7 @@ export default function Coop() {
         <div
           className="cursor-pointer px-6 py-4  pb-0 font-ft-expanded text-2xl md:px-9 md:py-0 md:pb-7 md:text-5xl"
           onClick={() => handleSectionChange('coop')}
+          ref={sectionRef}
         >
           Co-op Solutions
         </div>
