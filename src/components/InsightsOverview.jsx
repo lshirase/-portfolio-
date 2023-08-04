@@ -56,7 +56,7 @@ export function InsightsOverview({ handleSectionChange }) {
         />
         <div className="flex flex-1">
           <div className="flex flex-col items-baseline py-4 md:flex-row">
-            <div className="baseline sticky top-4 font-ft-bold text-xl md:w-1/4">
+            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl md:w-1/4">
               Problem Space
             </div>
             <div className="flex flex-1 flex-col">
@@ -138,7 +138,7 @@ export function InsightsOverview({ handleSectionChange }) {
         </div>
         <div className="flex flex-1">
           <div className="flex flex-col items-baseline py-4 md:flex-row">
-            <div className="baseline sticky top-4 font-ft-bold text-xl md:w-1/4">
+            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl md:w-1/4">
               The Approach
             </div>
             <div className="flex flex-1 flex-col">
@@ -365,7 +365,7 @@ export function InsightsOverview({ handleSectionChange }) {
         </div>
         <div className="flex flex-1">
           <div className="flex flex-col items-baseline py-4 md:flex-row">
-            <div className="baseline sticky top-4 font-ft-bold text-xl md:w-1/4">
+            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl md:w-1/4">
               The Results
             </div>
             <div className="flex flex-1 flex-col">
@@ -427,7 +427,7 @@ export function InsightsOverview({ handleSectionChange }) {
         </div>
         <div className="flex flex-1">
           <div className="flex flex-col items-baseline py-4 md:flex-row">
-            <div className="baseline sticky top-4 font-ft-bold text-xl md:w-1/4">
+            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl md:w-1/4">
               Reflections
             </div>
             <div className="flex flex-1 flex-col">

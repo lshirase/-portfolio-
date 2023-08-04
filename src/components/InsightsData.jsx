@@ -24,7 +24,7 @@ export function InsightsData({ handleSectionChange }) {
 
         <div className="flex flex-1">
           <div className="flex flex-col items-baseline py-4 md:flex-row">
-            <div className="baseline sticky top-4 font-ft-bold text-xl md:w-1/4">
+            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl md:w-1/4">
               Initial Dive
             </div>
             <div className="flex flex-1 flex-col">
@@ -93,7 +93,7 @@ export function InsightsData({ handleSectionChange }) {
         {/* section 2 */}
         <div className="flex flex-1">
           <div className="flex flex-col items-baseline py-4 md:flex-row">
-            <div className="baseline sticky top-4 font-ft-bold text-xl md:w-1/4">
+            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl md:w-1/4">
               Data -&gt; Arch
             </div>
             <div className="flex flex-1 flex-col">
@@ -201,7 +201,7 @@ export function InsightsData({ handleSectionChange }) {
         {/* section 3 */}
         <div className="flex flex-1">
           <div className="flex flex-col items-baseline py-4 md:flex-row">
-            <div className="baseline sticky top-4 font-ft-bold text-xl md:w-1/4">
+            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl md:w-1/4">
               Filtering v2
             </div>
             <div className="flex flex-1 flex-col">
@@ -297,7 +297,7 @@ export function InsightsData({ handleSectionChange }) {
         </div>
         <div className="flex flex-1">
           <div className="flex flex-col items-baseline py-4 md:flex-row">
-            <div className="baseline sticky top-4 font-ft-bold text-xl md:w-1/4">
+            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl md:w-1/4">
               Reflections
             </div>
             <div className="flex flex-1 flex-col">

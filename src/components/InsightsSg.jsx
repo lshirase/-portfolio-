@@ -20,7 +20,7 @@ export function InsightsSg({ handleSectionChange }) {
 
         <div className="flex flex-1">
           <div className="flex flex-col items-baseline py-4 md:flex-row">
-            <div className="baseline sticky top-4 font-ft-bold text-xl md:w-1/4">
+            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl md:w-1/4">
               The Challenge
             </div>
             <div className="flex flex-1 flex-col">
@@ -57,7 +57,7 @@ export function InsightsSg({ handleSectionChange }) {
         {/* section 2 */}
         <div className="flex flex-1">
           <div className="flex flex-col items-baseline py-4 md:flex-row">
-            <div className="baseline sticky top-4 font-ft-bold text-xl md:w-1/4">
+            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl md:w-1/4">
               The Research
             </div>
             <div className="flex flex-1 flex-col">
@@ -153,7 +153,7 @@ export function InsightsSg({ handleSectionChange }) {
         {/* section 3 */}
         <div className="flex flex-1">
           <div className="flex flex-col items-baseline py-4 md:flex-row">
-            <div className="baseline sticky top-4 font-ft-bold text-xl md:w-1/4">
+            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl md:w-1/4">
               The Results
             </div>
             <div className="flex flex-1 flex-col">
