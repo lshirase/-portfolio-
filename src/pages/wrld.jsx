@@ -5,7 +5,13 @@ import { InsightsOverview } from '@/components/InsightsOverview'
 import { InsightsData } from '@/components/InsightsData'
 import { InsightsSg } from '@/components/InsightsSg'
 import { useState, useEffect, useRef } from 'react'
-import wrldspinner from '@/images/wrld_spinner_desktop.gif'
+import wrldspinner from '@/images/wrld/wrld_spinner_desktop.gif'
+import wrld1 from '@/images/wrld/wrld1.png'
+import wrld2 from '@/images/wrld/wrld2.png'
+import wrld3 from '@/images/wrld/wrld3.png'
+import wrld4 from '@/images/wrld/wrld4.png'
+import wrld5 from '@/images/wrld/wrld5.png'
+import wrld6 from '@/images/wrld/wrld6.png'
 
 export default function Wrld() {
   return (
@@ -35,8 +41,8 @@ export default function Wrld() {
 
               <ol className="z-50 font-ft-serif">
                 <div>
-                  Develop a customizable and immersive web experience for WRLD,
-                  a web3 land management company.
+                  Develop and design a customizable and immersive web experience
+                  for WRLD, a web3 land management company.
                 </div>
 
                 <div className="pt-4 font-ft-italic text-sm">technology</div>
@@ -65,68 +71,77 @@ export default function Wrld() {
                   <Image src={wrldspinner} alt="spinner" loading="lazy" />
                 </div>
               </div>
-              {/* <div className="font-ft-bold text-lg md:text-xl">
-                Co-op Solutions is a nationwide credit union network supporting
-                their members with industry-leading ATM, digital payment,
-                security, and marketing services.
+              <div className="flex w-full self-center pb-6">
+                <Image src={wrld1} alt="landing design" loading="lazy" />
               </div>
-              <div className="flex flex-row py-10">
-                <div className="text-base">
-                  <h4 className="pb-2 font-ft-bold">Role(s)</h4>
-                  <div className="font-ikob-reg">
-                    <p>Product Designer</p>
-                    <p>UX Researcher</p>
-                    <p>Front-End Engineer</p>
-                    <p> Product Manager</p>
+              <div className="flex w-full self-center pb-6">
+                <Image src={wrld2} alt="welcome to wrld" loading="lazy" />
+              </div>
+              <div className="flex w-full self-center pb-6">
+                <Image src={wrld5} alt="play" loading="lazy" />
+              </div>
+              <div className="flex w-full self-center pb-6">
+                <video
+                  src="https://res.cloudinary.com/dkso10gnx/video/upload/c_crop,g_east,h_1136,w_1720/v1691194325/tokenomics_hi5k4d.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  className="pb-6"
+                />
+              </div>
+              <div className="flex w-full self-center pb-6">
+                <Image src={wrld4} alt="play" loading="lazy" />
+              </div>
+
+              <div className="flex flex-1">
+                <div className="flex flex-col items-baseline py-4 md:flex-row">
+                  <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl md:w-1/4">
+                    Customizable
+                  </div>
+                  <div className="flex flex-1 flex-col">
+                    <div className="pb-6">
+                      <div className="baseline font-ft-reg text-base">
+                        React Bricks
+                      </div>
+
+                      <div className="py-2 font-ft-bold text-lg md:text-xl">
+                        Add sections, customize components, and edit content all
+                        within a CMS
+                      </div>
+                      <div className="font-ikob-reg text-base">
+                        A technical requirement of this project required us to
+                        think outside of the box to find a solution that would
+                        allow for the client to customize the site without
+                        having to touch code. We decided to use React Bricks, a
+                        headless CMS that allows for the creation of custom
+                        components and sections. This allowed us to create a
+                        library of components that the client could use to build
+                        out their site.
+                      </div>
+                    </div>
+                    <video
+                      src="https://res.cloudinary.com/dkso10gnx/video/upload/v1691194325/addbrick_hulees.mp4"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      preload="metadata"
+                      className="pb-6"
+                    />
+                    <video
+                      src="https://res.cloudinary.com/dkso10gnx/video/upload/v1691194325/editbrick_flxkdr.mp4"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      preload="metadata"
+                      className="pb-6"
+                    />
                   </div>
                 </div>
-                <div className="pl-14 text-base">
-                  <h4 className="pb-2 font-ft-bold">Duration</h4>
-                  <div className="font-ikob-reg">
-                    <p>March 2021 - February 2023</p>
-                  </div>
-                </div>
               </div>
-              <div className="text-base">
-                <h4 className="pb-2 font-ft-bold">About</h4>
-                <div className="pb-4 font-ikob-reg md:pb-0">
-                  For two-ish years, I was the primary design consultant (and
-                  secondary development consultant) for the redesign of
-                  <span className="inline-block cursor-pointer font-ft-serif text-green hover:text-white">
-                    Insights Center
-                  </span>
-                  , a web-based reporting platform that helps credit unions
-                  understand their credit, debit, and ATM portfolios. I
-                  initially started the project as a designer but as the project
-                  grew, so did I! My domain expanded and my responsibilities
-                  started to look like a hybrid of a designer, developer, and a
-                  product manager. Thankful for my team and the client for
-                  giving me the space to go head first into this new world. I
-                  also worked on a couple other fun projects along the way like{' '}
-                  <a
-                    href={'https://campaigns.coop.org/think-2023/p/1'}
-                    target={'_blank'}
-                    rel="noreferrer"
-                    className="items-top inline-flex cursor-pointer font-ft-serif text-green hover:text-white"
-                  >
-                    THINK 2023
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 22 22"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M21 11V3h-8v2h4v2h-2v2h-2v2h-2v2H9v2h2v-2h2v-2h2V9h2V7h2v4h2zM11 5H3v16h16v-8h-2v6H5V7h6V5z"
-                      />
-                    </svg>
-                  </a>{' '}
-                  site and aiding in the development of
-                  <span className="font-ft-serif"> storybook components </span>
-                  for Springboard.
-                </div>
-              </div> */}
             </>
           </div>
         </div>

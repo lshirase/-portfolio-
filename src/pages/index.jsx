@@ -23,6 +23,7 @@ import { Header } from '@/components/Header'
 import { LinkHover } from '@/components/LinkHover'
 import VideoPlayer from '@/components/VideoPlayer'
 import VideoPlayerMobile from '@/components/VideoPlayerMobile'
+import spinner from '@/images/wrld/wrld_spinner.gif'
 
 const videos = ['/magic2.webm', '/tulip2.webm', '/dinho1.webm', '/tiger3.webm']
 
@@ -178,7 +179,7 @@ export default function Home({ articles }) {
                 imageSrc={placeholder}
                 text="1. co-op solutions"
               />
-              <LinkHover link="wrld" imageSrc={placeholder} text="2. wrld3d" />
+              <LinkHover link="wrld" imageSrc={spinner} text="2. wrld3d" />
               <LinkHover
                 link="coop"
                 imageSrc={placeholder}
