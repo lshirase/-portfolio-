@@ -140,12 +140,11 @@ export default function Coop() {
                   <h4 className="pb-2 font-ft-bold">About</h4>
                   <div className="pb-4 font-ikob-reg md:pb-0">
                     For two-ish years, I was the primary design consultant (and
-                    secondary development consultant) for the redesign of
+                    secondary development consultant) for the redesign of{' '}
                     <span
                       className="inline-block cursor-pointer font-ft-serif text-green hover:text-white"
                       onClick={() => handleSectionChange('insights')}
                     >
-                      {' '}
                       Insights Center
                     </span>
                     , a web-based reporting platform that helps credit unions
