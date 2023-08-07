@@ -9,7 +9,7 @@ import wrld4 from '@/images/wrld/wrld4.png'
 import wrld5 from '@/images/wrld/wrld5.png'
 import wrld6 from '@/images/wrld/wrld6.png'
 
-export default function Wrld() {
+export default function Nfl() {
   return (
     <>
       <Head>
