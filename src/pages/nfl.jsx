@@ -13,7 +13,7 @@ export default function Nfl() {
   return (
     <>
       <Head>
-        <title>len shirase wrld</title>
+        <title>len shirase nfl + verizon</title>
         <meta
           name="description"
           content="All of my projects with Co-op Solutions."
@@ -27,7 +27,7 @@ export default function Nfl() {
       >
         <Header />
         <div className="cursor-pointer px-6 py-4  pb-0 font-ft-expanded text-2xl md:px-9 md:py-0 md:pb-7 md:text-5xl">
-          WRLD
+          nfl + verizon
         </div>
         <div className="flex flex-col px-6 pt-4 text-xs md:flex-row md:px-12 md:pt-0">
           {/* make this sticky */}

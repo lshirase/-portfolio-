@@ -1,24 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
-import clsx from 'clsx'
-
-import { Button } from '@/components/Button'
-import { Card } from '@/components/Card'
-
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
 import placeholder from '@/images/placeholder.png'
-import { formatDate } from '@/lib/formatDate'
-import { generateRssFeed } from '@/lib/generateRssFeed'
-import { getAllArticles } from '@/lib/getAllArticles'
+
 import { Header } from '@/components/Header'
 import { LinkHover } from '@/components/LinkHover'
 import VideoPlayer from '@/components/VideoPlayer'
@@ -50,7 +33,7 @@ export default function Home() {
               />
               <LinkHover link="wrld" imageSrc={spinner} text="2. wrld3d" />
               <LinkHover
-                link="coop"
+                link="nfl"
                 imageSrc={placeholder}
                 text="3. nfl + verizon"
               />
@@ -91,19 +74,6 @@ export default function Home() {
           <VideoPlayerMobile />
         </div>
       </div>
-      {/* <Container className="mt-24 md:mt-28">
-        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          <div className="flex flex-col gap-16">
-            {articles.map((article) => (
-              <Article key={article.slug} article={article} />
-            ))}
-          </div>
-          <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Resume />
-          </div>
-        </div>
-      </Container> */}
     </>
   )
 }
-
