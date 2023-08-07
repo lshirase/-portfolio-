@@ -52,10 +52,10 @@ export default function Home() {
               <Link href="coop" passHref>
                 <li>1. co-op solutions</li>
               </Link>
-              <Link href="coop" passHref>
+              <Link href="wrld" passHref>
                 <li>2. wrld3d</li>
               </Link>
-              <Link href="coop" passHref>
+              <Link href="nfl" passHref>
                 <li>3. nfl + verizon</li>
               </Link>
               <Link href="coop" passHref>
