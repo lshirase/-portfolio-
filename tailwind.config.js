@@ -29,7 +29,12 @@ module.exports = {
       'ikob-italic': ['var(--font-ikobitalic)', 'serif'],
       'ikob-bold': ['var(--font-ikobbold)', 'serif'],
     },
-    colors: { white: '#FCFCFC', blue: '#0500FF', green: '#00FF29' },
+    colors: {
+      white: '#FCFCFC',
+      blue: '#0500FF',
+      green: '#00FF29',
+      black: '#000000',
+    },
     typography: (theme) => ({
       invert: {
         css: {
