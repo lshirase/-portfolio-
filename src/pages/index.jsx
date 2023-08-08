@@ -22,7 +22,7 @@ export default function Home() {
       </Head>
       <div className="flex h-screen flex-col md:w-screen ">
         <Header bgWhite />
-        <div className="inline-flex flex-none flex-row px-6 pt-4 text-xs sm:px-12 sm:pt-0">
+        <div className="inline-flex flex-none flex-row px-6 pt-4 text-xs sm:pt-0 lg:px-12">
           <div className="flex-col">
             <div className="font-ft-italic text-sm">selected work</div>
             <ol className="z-50 hidden font-ft-serif md:block">

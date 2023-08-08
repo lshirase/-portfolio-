@@ -404,7 +404,7 @@ export default function Nfl() {
               <div className="flex flex-1">
                 <div className="flex flex-col items-baseline py-4 lg:flex-row">
                   <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl lg:w-1/4">
-                    Relfection
+                    Reflection
                   </div>
                   <div className="flex flex-1 flex-col">
                     <div className="pb-6">
