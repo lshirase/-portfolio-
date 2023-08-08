@@ -7,6 +7,9 @@ import { LinkHover } from '@/components/LinkHover'
 import VideoPlayer from '@/components/VideoPlayer'
 import VideoPlayerMobile from '@/components/VideoPlayerMobile'
 import spinner from '@/images/wrld/wrld_spinner1.gif'
+import logo from '@/images/logo.png'
+import nfl1 from '@/images/nfl/nfl1.png'
+import tulip from '@/images/tulip.png'
 
 const videos = ['/magic2.webm', '/tulip2.webm', '/dinho1.webm', '/tiger3.webm']
 
@@ -28,25 +31,12 @@ export default function Home() {
             <ol className="z-50 hidden font-ft-serif md:block">
               <LinkHover
                 link="coop"
-                imageSrc={placeholder}
+                imageSrc={logo}
                 text="1. co-op solutions"
               />
               <LinkHover link="wrld" imageSrc={spinner} text="2. wrld3d" />
-              <LinkHover
-                link="nfl"
-                imageSrc={placeholder}
-                text="3. nfl + verizon"
-              />
-              <LinkHover
-                link="coop"
-                imageSrc={placeholder}
-                text="4. millcross coffee"
-              />
-              <LinkHover
-                link="coop"
-                imageSrc={placeholder}
-                text="5. various graphics"
-              />
+              <LinkHover link="nfl" imageSrc={nfl1} text="3. nfl + verizon" />
+              <LinkHover link="coop" imageSrc={tulip} text="4. graphics etc" />
             </ol>
             <ol className="z-50 font-ft-serif md:hidden">
               <Link href="coop" passHref>
@@ -59,10 +49,7 @@ export default function Home() {
                 <li>3. nfl + verizon</li>
               </Link>
               <Link href="coop" passHref>
-                <li>4. millcross coffee</li>
-              </Link>
-              <Link href="coop" passHref>
-                <li>5. various graphics</li>
+                <li>4. graphics etc</li>
               </Link>
             </ol>
           </div>
