@@ -11,7 +11,7 @@ export function InsightsOverview({ handleSectionChange }) {
   return (
     <div className="bg-blue">
       <div>
-        <div className="font-ft-reg text-lg md:text-xl">
+        <div className="font-ft-reg text-lg lg:text-xl">
           Redesigned Insights Center, a web-based reporting platform that helps
           credit unions understand their credit, debit, and ATM portfolios, from
           a static reporting to a custom reporting model enabling users to see
@@ -55,8 +55,8 @@ export function InsightsOverview({ handleSectionChange }) {
           className="pb-6"
         />
         <div className="flex flex-1">
-          <div className="flex flex-col items-baseline py-4 md:flex-row">
-            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl md:w-1/4">
+          <div className="flex flex-col items-baseline py-4 lg:flex-row">
+            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl lg:w-1/4">
               Problem Space
             </div>
             <div className="flex flex-1 flex-col">
@@ -65,7 +65,7 @@ export function InsightsOverview({ handleSectionChange }) {
                   User Problems
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   The static reporting model rarely provides relevant
                   information to the credit unions.
                 </div>
@@ -83,7 +83,7 @@ export function InsightsOverview({ handleSectionChange }) {
                   Measuring Success
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   Building a reporting system capable of encompassing the
                   intricacy of the data within a versatile framework.
                 </div>
@@ -103,7 +103,7 @@ export function InsightsOverview({ handleSectionChange }) {
                   The Challenge
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   How might we scale our reporting system to facilitate a
                   high-level understanding while enabling deep customization of
                   complex data elements?
@@ -137,8 +137,8 @@ export function InsightsOverview({ handleSectionChange }) {
           />
         </div>
         <div className="flex flex-1">
-          <div className="flex flex-col items-baseline py-4 md:flex-row">
-            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl md:w-1/4">
+          <div className="flex flex-col items-baseline py-4 lg:flex-row">
+            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl lg:w-1/4">
               The Approach
             </div>
             <div className="flex flex-1 flex-col">
@@ -147,7 +147,7 @@ export function InsightsOverview({ handleSectionChange }) {
                   Research Principles
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   Meet early and often
                 </div>
                 <div className="font-ikob-reg text-base">
@@ -159,7 +159,7 @@ export function InsightsOverview({ handleSectionChange }) {
                   platform focusing on the credit union experience.
                 </div>
               </div>
-              <div className="flex w-full self-center pb-6 md:w-1/2">
+              <div className="flex w-full self-center pb-6 lg:w-1/2">
                 <Image src={overview2} alt="design cycle" loading="lazy" />
               </div>
               <div className="pb-6">
@@ -167,7 +167,7 @@ export function InsightsOverview({ handleSectionChange }) {
                   Design Principles
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   Fail fast and prototype faster
                 </div>
                 <div className="font-ikob-reg text-base">
@@ -182,7 +182,7 @@ export function InsightsOverview({ handleSectionChange }) {
                   Understanding the User
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   Validating through extensive usability testing
                 </div>
                 <div className="font-ikob-reg text-base">
@@ -217,7 +217,7 @@ export function InsightsOverview({ handleSectionChange }) {
                   Key Insights
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   The Current reporting suite does not effectively service the
                   varying needs of credit union employees
                 </div>
@@ -228,7 +228,7 @@ export function InsightsOverview({ handleSectionChange }) {
                   support the multitude of use cases using a static model.
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   Credit Unions use their own tedious in-house methods because
                   they feel like it will provide them with more accurate data
                 </div>
@@ -251,7 +251,7 @@ export function InsightsOverview({ handleSectionChange }) {
                   Understanding the Current/Adjacent Platforms
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   Deep exploration of current tools
                 </div>
                 <div className="pb-4 font-ikob-reg text-base">
@@ -276,7 +276,7 @@ export function InsightsOverview({ handleSectionChange }) {
                   Key Insights
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   Reporting is currently being done across a variety of
                   different platforms
                 </div>
@@ -287,7 +287,7 @@ export function InsightsOverview({ handleSectionChange }) {
                   and needs a platform that supports the variations in data
                   available.
                 </div>
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   There are many similarities between the different platforms
                   used
                 </div>
@@ -295,7 +295,7 @@ export function InsightsOverview({ handleSectionChange }) {
                   Sometimes the only key differentiator between the platforms
                   was the type of data supported.
                 </div>
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   We had a lot of reports to support...
                 </div>
                 <div className="pb-4 font-ikob-reg text-base">
@@ -303,7 +303,7 @@ export function InsightsOverview({ handleSectionChange }) {
                   comparisons, our new system had to support it all.
                 </div>
               </div>
-              <div className="flex w-full self-center pb-6 md:w-1/2">
+              <div className="flex w-full self-center pb-6 lg:w-1/2">
                 <Image
                   src={overview6}
                   alt="adjacent platforms reports"
@@ -316,7 +316,7 @@ export function InsightsOverview({ handleSectionChange }) {
                   Deconstructing the Data
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   Object (Data) Oriented UX
                 </div>
                 <div className="pb-4 font-ikob-reg text-base">
@@ -339,7 +339,7 @@ export function InsightsOverview({ handleSectionChange }) {
                   Key Insights
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   &quot;Theming&quot; Data
                 </div>
                 <div className="pb-2 font-ikob-reg text-base">
@@ -350,7 +350,7 @@ export function InsightsOverview({ handleSectionChange }) {
                   differentiate on drill down.
                 </div>
               </div>
-              <div className="w-full flex-col self-center pb-6 font-ft-bold text-lg text-white md:w-2/3 md:text-xl">
+              <div className="w-full flex-col self-center pb-6 font-ft-bold text-lg text-white lg:w-2/3 lg:text-xl">
                 See a deeper dive of how understanding the data influenced our
                 designs here: <br />
                 <span
@@ -364,8 +364,8 @@ export function InsightsOverview({ handleSectionChange }) {
           </div>
         </div>
         <div className="flex flex-1">
-          <div className="flex flex-col items-baseline py-4 md:flex-row">
-            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl md:w-1/4">
+          <div className="flex flex-col items-baseline py-4 lg:flex-row">
+            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl lg:w-1/4">
               The Results
             </div>
             <div className="flex flex-1 flex-col">
@@ -374,7 +374,7 @@ export function InsightsOverview({ handleSectionChange }) {
                   Development
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   A coded prototype is worth a thousand words
                 </div>
                 <div className="font-ikob-reg text-base">
@@ -389,7 +389,7 @@ export function InsightsOverview({ handleSectionChange }) {
                   Code Hand Off
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   Our code is being utilized for the production build of the new
                   Insights Center
                 </div>
@@ -404,7 +404,7 @@ export function InsightsOverview({ handleSectionChange }) {
                   Stakeholder Feedback
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   &quot;I&apos;ve been working in this field a long time and I
                   can say that if we can get this off the ground, there will be
                   nothing like it&quot;
@@ -426,8 +426,8 @@ export function InsightsOverview({ handleSectionChange }) {
           </div>
         </div>
         <div className="flex flex-1">
-          <div className="flex flex-col items-baseline py-4 md:flex-row">
-            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl md:w-1/4">
+          <div className="flex flex-col items-baseline py-4 lg:flex-row">
+            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl lg:w-1/4">
               Reflections
             </div>
             <div className="flex flex-1 flex-col">
@@ -436,7 +436,7 @@ export function InsightsOverview({ handleSectionChange }) {
                   Data Quality
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   Without data, there is nothing
                 </div>
                 <div className="font-ikob-reg text-base">
