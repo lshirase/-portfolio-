@@ -10,10 +10,10 @@ export function InsightsData({ handleSectionChange }) {
   return (
     <div className="bg-blue">
       <div>
-        <div className="pb-2 font-ft-bold text-lg md:text-xl">
+        <div className="pb-2 font-ft-bold text-lg lg:text-xl">
           Insights Center: Filtering and Data
         </div>
-        <div className="font-ft-reg text-lg md:text-xl">
+        <div className="font-ft-reg text-lg lg:text-xl">
           Redesigning Insights Center posed a significant challenge in
           integrating a multitude of data, reports, and workflows, scattered
           across various platforms, into a cohesive and centralized interface.
@@ -23,8 +23,8 @@ export function InsightsData({ handleSectionChange }) {
         </div>
 
         <div className="flex flex-1">
-          <div className="flex flex-col items-baseline py-4 md:flex-row">
-            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl md:w-1/4">
+          <div className="flex flex-col items-baseline py-4 lg:flex-row">
+            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl lg:w-1/4">
               Initial Dive
             </div>
             <div className="flex flex-1 flex-col">
@@ -33,7 +33,7 @@ export function InsightsData({ handleSectionChange }) {
                   Deconstructing the Data
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   Object (Data) Oriented UX
                 </div>
                 <div className="font-ikob-reg text-base">
@@ -56,7 +56,7 @@ export function InsightsData({ handleSectionChange }) {
                   Finding Connections
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   Seed turns into a (data) tree
                 </div>
                 <div className="pb-4 font-ikob-reg text-base">
@@ -76,7 +76,7 @@ export function InsightsData({ handleSectionChange }) {
                       className="w-full"
                     />
                   </div>
-                  <div className="flex w-full self-center pb-6 md:w-1/2">
+                  <div className="flex w-full self-center pb-6 lg:w-1/2">
                     <Image
                       src={data2}
                       alt="transaction analysis report"
@@ -92,8 +92,8 @@ export function InsightsData({ handleSectionChange }) {
 
         {/* section 2 */}
         <div className="flex flex-1">
-          <div className="flex flex-col items-baseline py-4 md:flex-row">
-            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl md:w-1/4">
+          <div className="flex flex-col items-baseline py-4 lg:flex-row">
+            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl lg:w-1/4">
               Data -&gt; Arch
             </div>
             <div className="flex flex-1 flex-col">
@@ -102,7 +102,7 @@ export function InsightsData({ handleSectionChange }) {
                   Setting the Foundation
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   Translating the tree into IA
                 </div>
                 <div className="font-ikob-reg text-base">
@@ -124,7 +124,7 @@ export function InsightsData({ handleSectionChange }) {
                   Setting the Stage
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   Report filtering (v1) as the first layer
                 </div>
                 <div className="font-ikob-reg text-base">
@@ -151,7 +151,7 @@ export function InsightsData({ handleSectionChange }) {
                   Getting Granular
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   Widgets as the primary driver
                 </div>
                 <div className="font-ikob-reg text-base">
@@ -176,7 +176,7 @@ export function InsightsData({ handleSectionChange }) {
                   Getting Granular (Even More)
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   Widget filtering as the drill-down
                 </div>
                 <div className="font-ikob-reg text-base">
@@ -200,8 +200,8 @@ export function InsightsData({ handleSectionChange }) {
         </div>
         {/* section 3 */}
         <div className="flex flex-1">
-          <div className="flex flex-col items-baseline py-4 md:flex-row">
-            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl md:w-1/4">
+          <div className="flex flex-col items-baseline py-4 lg:flex-row">
+            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl lg:w-1/4">
               Filtering v2
             </div>
             <div className="flex flex-1 flex-col">
@@ -210,7 +210,7 @@ export function InsightsData({ handleSectionChange }) {
                   Data Refinement
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   As time passed, our understanding grew
                 </div>
                 <div className="font-ikob-reg text-base">
@@ -234,7 +234,7 @@ export function InsightsData({ handleSectionChange }) {
                   Influence on Design
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   Stratifying the data
                 </div>
                 <div className="font-ikob-reg text-base">
@@ -262,7 +262,7 @@ export function InsightsData({ handleSectionChange }) {
                   New Filtering
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   Opinionated and Hierarchical
                 </div>
                 <div className="font-ikob-reg text-base">
@@ -296,8 +296,8 @@ export function InsightsData({ handleSectionChange }) {
           </div>
         </div>
         <div className="flex flex-1">
-          <div className="flex flex-col items-baseline py-4 md:flex-row">
-            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl md:w-1/4">
+          <div className="flex flex-col items-baseline py-4 lg:flex-row">
+            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl lg:w-1/4">
               Reflections
             </div>
             <div className="flex flex-1 flex-col">
@@ -306,7 +306,7 @@ export function InsightsData({ handleSectionChange }) {
                   Always Learning
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   Continuous research and refinement is key
                 </div>
                 <div className="font-ikob-reg text-base">
@@ -318,7 +318,7 @@ export function InsightsData({ handleSectionChange }) {
                   because it invalidated a design, we kept it pushing.
                 </div>
               </div>
-              <div className="w-full flex-col self-center pb-6 font-ft-bold text-lg text-white md:w-3/4 md:text-xl">
+              <div className="w-full flex-col self-center pb-6 font-ft-bold text-lg text-white lg:w-3/4 lg:text-xl">
                 Next up, see how we partnered with an internal Co-op team to
                 make a tailor made product within Insights Center: <br />
                 <span

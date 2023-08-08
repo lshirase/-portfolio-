@@ -9,18 +9,18 @@ export function InsightsSg({ handleSectionChange }) {
   return (
     <div className="bg-blue">
       <div>
-        <div className="pb-2 font-ft-bold text-lg md:text-xl">
+        <div className="pb-2 font-ft-bold text-lg lg:text-xl">
           Insights Center: SmartGrowth
         </div>
-        <div className="font-ft-reg text-lg md:text-xl">
+        <div className="font-ft-reg text-lg lg:text-xl">
           SmartGrowth are essentially an agency that works within Co-op to help
           their credit unions make sense of their credit and debit portfolios
           and make suggestions about different campaigns.
         </div>
 
         <div className="flex flex-1">
-          <div className="flex flex-col items-baseline py-4 md:flex-row">
-            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl md:w-1/4">
+          <div className="flex flex-col items-baseline py-4 lg:flex-row">
+            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl lg:w-1/4">
               The Challenge
             </div>
             <div className="flex flex-1 flex-col">
@@ -29,7 +29,7 @@ export function InsightsSg({ handleSectionChange }) {
                   High Level Review
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   The SmartGrowth team routinely prepares High Level Review
                   reports that summarize and evaluate card program performance.
                 </div>
@@ -56,8 +56,8 @@ export function InsightsSg({ handleSectionChange }) {
 
         {/* section 2 */}
         <div className="flex flex-1">
-          <div className="flex flex-col items-baseline py-4 md:flex-row">
-            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl md:w-1/4">
+          <div className="flex flex-col items-baseline py-4 lg:flex-row">
+            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl lg:w-1/4">
               The Research
             </div>
             <div className="flex flex-1 flex-col">
@@ -66,7 +66,7 @@ export function InsightsSg({ handleSectionChange }) {
                   Research Approach
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   Understanding the SmartGrowth team
                 </div>
                 <div className="font-ikob-reg text-base">
@@ -109,7 +109,7 @@ export function InsightsSg({ handleSectionChange }) {
                   Key Insights
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   The High Level Review takes a Smart Growth Advisor between 6 -
                   10 hours to complete.
                 </div>
@@ -119,7 +119,7 @@ export function InsightsSg({ handleSectionChange }) {
                   multiple systems and is extremely time consuming.
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   Time and cost prevents SmartGrowth from being able to service
                   a large portion of Co-op clients.
                 </div>
@@ -127,7 +127,7 @@ export function InsightsSg({ handleSectionChange }) {
                   If clients are under 350M in asset size (~70% of CUs) they
                   currently cannot afford to engage with SmartGrowth.
                 </div>
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   Data tables from tools like Alteryx are comprehensive, they
                   also include some less useful and less relevant details and
                   can obfuscate insights because they are not visual.
@@ -152,8 +152,8 @@ export function InsightsSg({ handleSectionChange }) {
         </div>
         {/* section 3 */}
         <div className="flex flex-1">
-          <div className="flex flex-col items-baseline py-4 md:flex-row">
-            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl md:w-1/4">
+          <div className="flex flex-col items-baseline py-4 lg:flex-row">
+            <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl lg:w-1/4">
               The Results
             </div>
             <div className="flex flex-1 flex-col">
@@ -162,7 +162,7 @@ export function InsightsSg({ handleSectionChange }) {
                   What We Made{' '}
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   A streamlined High Level Review
                 </div>
                 <div className="font-ikob-reg text-base">
@@ -191,7 +191,7 @@ export function InsightsSg({ handleSectionChange }) {
               <div className="baseline font-ft-reg text-base">
                 Primary Achievements
               </div>
-              <div className="py-2 font-ft-bold text-lg md:text-xl">
+              <div className="py-2 font-ft-bold text-lg lg:text-xl">
                 Multiple systems into one flow within Insights Center
               </div>
               <div className="pb-6 font-ikob-reg text-base">
@@ -222,7 +222,7 @@ export function InsightsSg({ handleSectionChange }) {
                   Stakeholder Feedback
                 </div>
 
-                <div className="py-2 font-ft-bold text-lg md:text-xl">
+                <div className="py-2 font-ft-bold text-lg lg:text-xl">
                   &quot;This is easily the best demo I’ve seen this month&quot;
                   <ul className="list-inside list-disc space-y-1 pl-6">
                     <li>Bruce Dragt, Chief Product Officer, Co-op Solutions</li>

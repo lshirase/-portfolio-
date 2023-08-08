@@ -34,6 +34,7 @@ module.exports = {
       blue: '#0500FF',
       green: '#00FF29',
       black: '#000000',
+      red: '#cd040b',
     },
     typography: (theme) => ({
       invert: {

@@ -38,16 +38,16 @@ export default function Coop() {
       >
         <Header />
         <div
-          className="cursor-pointer px-6 py-4  pb-0 font-ft-expanded text-2xl md:px-9 md:py-0 md:pb-7 md:text-5xl"
+          className="cursor-pointer px-6 py-4  pb-0 font-ft-expanded text-2xl lg:px-9 lg:py-0 lg:pb-7 lg:text-5xl"
           onClick={() => handleSectionChange('coop')}
           ref={sectionRef}
         >
           Co-op Solutions
         </div>
-        <div className="flex flex-col px-6 pt-4 text-xs md:flex-row md:px-12 md:pt-0">
+        <div className="flex flex-col px-6 pt-4 text-xs lg:flex-row lg:px-12 lg:pt-0">
           {/* make this sticky */}
           <div>
-            <div className="sticky top-0 flex-none flex-col pb-4 text-xs md:pb-0">
+            <div className="sticky top-0 flex-none flex-col pb-4 text-xs lg:pb-0">
               <div className="font-ft-italic text-sm">insights center</div>
 
               <ol className="z-50 cursor-pointer font-ft-serif">
@@ -111,10 +111,10 @@ export default function Coop() {
             </div>
           </div>
           {/* switch component here */}
-          <div className="flex flex-col md:w-4/5 md:pl-24 lg:w-2/3 lg:pl-60">
+          <div className="flex flex-col lg:w-4/5 lg:pl-24 xl:w-2/3 xl:pl-60">
             {activeSection === 'coop' && (
               <>
-                <div className="font-ft-bold text-lg md:text-xl">
+                <div className="font-ft-bold text-xl lg:text-xl">
                   Co-op Solutions is a nationwide credit union network
                   supporting their members with industry-leading ATM, digital
                   payment, security, and marketing services.
@@ -138,14 +138,13 @@ export default function Coop() {
                 </div>
                 <div className="text-base">
                   <h4 className="pb-2 font-ft-bold">About</h4>
-                  <div className="pb-4 font-ikob-reg md:pb-0">
+                  <div className="pb-4 font-ikob-reg lg:pb-0">
                     For two-ish years, I was the primary design consultant (and
-                    secondary development consultant) for the redesign of
+                    secondary development consultant) for the redesign of{' '}
                     <span
                       className="inline-block cursor-pointer font-ft-serif text-green hover:text-white"
                       onClick={() => handleSectionChange('insights')}
                     >
-                      {' '}
                       Insights Center
                     </span>
                     , a web-based reporting platform that helps credit unions

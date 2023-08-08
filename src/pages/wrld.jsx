@@ -22,17 +22,17 @@ export default function Wrld() {
       <div
         className={
           //   'flex h-full w-screen flex-col bg-blue text-white'
-          'flex w-screen flex-col overflow-x-hidden bg-black text-white md:h-screen'
+          'flex w-screen flex-col overflow-x-hidden bg-black text-white lg:h-screen'
         }
       >
         <Header />
-        <div className="cursor-pointer px-6 py-4  pb-0 font-ft-expanded text-2xl md:px-9 md:py-0 md:pb-7 md:text-5xl">
+        <div className="cursor-pointer px-6 py-4  pb-0 font-ft-expanded text-2xl lg:px-9 lg:py-0 lg:pb-7 lg:text-5xl">
           WRLD
         </div>
-        <div className="flex flex-col px-6 pt-4 text-xs md:flex-row md:px-12 md:pt-0">
+        <div className="flex flex-col px-6 pt-4 text-xs lg:flex-row lg:px-12 lg:pt-0">
           {/* make this sticky */}
           <div>
-            <div className="sticky top-0 max-w-sm flex-none flex-col pb-4 text-xs md:pb-0">
+            <div className="sticky top-0 max-w-sm flex-none flex-col pb-4 text-xs lg:pb-0">
               <div className="font-ft-italic text-sm">brief</div>
 
               <ol className="z-50 font-ft-serif">
@@ -48,7 +48,7 @@ export default function Wrld() {
               </ol>
             </div>
           </div>
-          <div className="flex flex-col md:w-4/5 md:pl-24 lg:w-2/3 ">
+          <div className="flex flex-col lg:w-4/5 lg:pl-24 xl:w-2/3 ">
             <>
               <div
                 className="relative flex flex-col items-center justify-center"
@@ -109,8 +109,8 @@ export default function Wrld() {
               </div>
 
               <div className="flex flex-1">
-                <div className="flex flex-col items-baseline py-4 md:flex-row">
-                  <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl md:w-1/4">
+                <div className="flex flex-col items-baseline py-4 lg:flex-row">
+                  <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl lg:w-1/4">
                     Customizable
                   </div>
                   <div className="flex flex-1 flex-col">
@@ -119,7 +119,7 @@ export default function Wrld() {
                         React Bricks
                       </div>
 
-                      <div className="py-2 font-ft-bold text-lg md:text-xl">
+                      <div className="py-2 font-ft-bold text-lg lg:text-xl">
                         Add sections, customize components, and edit content all
                         within a CMS
                       </div>
