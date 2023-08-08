@@ -30,17 +30,17 @@ export default function Nfl() {
       <div
         className={
           //   'flex h-full w-screen flex-col bg-blue text-white'
-          'flex w-screen flex-col overflow-x-hidden bg-red text-white md:h-screen'
+          'flex w-screen flex-col overflow-x-hidden bg-red text-white lg:h-screen'
         }
       >
         <Header />
-        <div className="cursor-pointer px-6 py-4  pb-0 font-ft-expanded text-2xl md:px-9 md:py-0 md:pb-7 md:text-5xl">
+        <div className="cursor-pointer px-6 py-4  pb-0 font-ft-expanded text-2xl lg:px-9 lg:py-0 lg:pb-7 lg:text-5xl">
           NFL Game Sense
         </div>
-        <div className="flex flex-col px-6 pt-4 text-xs md:flex-row md:px-12 md:pt-0">
+        <div className="flex flex-col px-6 pt-4 text-xs lg:flex-row lg:px-12 lg:pt-0">
           {/* make this sticky */}
           <div>
-            <div className="sticky top-0 max-w-sm flex-none flex-col pb-4 text-xs md:pb-0">
+            <div className="sticky top-0 max-w-sm flex-none flex-col pb-4 text-xs lg:pb-0">
               <ol className="z-50 font-ft-serif">
                 <div className="font-ft-italic text-sm">client</div>
 
@@ -53,23 +53,23 @@ export default function Nfl() {
               </ol>
             </div>
           </div>
-          <div className="flex flex-col md:w-4/5 md:pl-24 lg:w-2/3 lg:pl-60">
+          <div className="flex flex-col lg:w-4/5 lg:pl-24 xl:w-2/3 xl:pl-60">
             <>
-              <div className="font-ft-reg text-lg md:text-xl">
+              <div className="font-ft-reg text-lg lg:text-xl">
                 NFL Game Sense is an in-stadium video experience that allows
                 fans to follow the game from multiple camera angles as well as
                 real time data overlays that help tell the story of the game.
               </div>
               <div className="flex flex-1">
-                <div className="flex flex-col items-baseline py-4 md:flex-row">
-                  <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl md:w-1/4">
+                <div className="flex flex-col items-baseline py-4 lg:flex-row">
+                  <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl lg:w-1/4">
                     Overview
                   </div>
                   <div className="flex flex-1 flex-col items-center lg:flex-row">
                     <div className="pb-6">
                       <div className="baseline font-ft-reg text-base">5g</div>
 
-                      <div className="py-2 font-ft-bold text-lg md:text-xl">
+                      <div className="py-2 font-ft-bold text-lg lg:text-xl">
                         &ldquo;How does 5G technology fit within the context of
                         the Super Bowl? We want a lot of videos, how fast can
                         you figure it out?&rdquo;
@@ -87,20 +87,20 @@ export default function Nfl() {
                       src={nfl1}
                       alt="nfl game sense"
                       loading="lazy"
-                      className="w-1/2 pl-0 md:w-1/5 md:pl-5"
+                      className="w-1/2 pl-0 lg:w-1/5 lg:pl-5"
                     />
                   </div>
                 </div>
               </div>
 
               <div className="flex flex-1">
-                <div className="flex flex-col items-baseline py-4 md:flex-row">
-                  <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl md:w-1/4">
+                <div className="flex flex-col items-baseline py-4 lg:flex-row">
+                  <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl lg:w-1/4">
                     The Approach
                   </div>
                   <div className="flex flex-1 flex-col">
                     <div className="pb-6">
-                      <div className="py-2 font-ft-bold text-lg md:text-xl">
+                      <div className="py-2 font-ft-bold text-lg lg:text-xl">
                         Team
                       </div>
                       <div className="font-ikob-reg text-base">
@@ -115,7 +115,7 @@ export default function Nfl() {
                       </div>
                     </div>
                     <div className="pb-6">
-                      <div className="py-2 font-ft-bold text-lg md:text-xl">
+                      <div className="py-2 font-ft-bold text-lg lg:text-xl">
                         Research
                       </div>
                       <div className="font-ikob-reg text-base">
@@ -174,7 +174,7 @@ export default function Nfl() {
                         />
                       </div>
                     </div>
-                    <div className="w-full self-center py-2 text-center font-ft-bold text-lg md:w-2/3 md:text-xl">
+                    <div className="w-full self-center py-2 text-center font-ft-bold text-lg lg:w-2/3 lg:text-xl">
                       This was the gap we were looking for, a moment where we
                       could imagine someone actually using their phone to look
                       at something that&apos;s not social media while at the
@@ -182,7 +182,7 @@ export default function Nfl() {
                       our idea.
                     </div>
                     <div className="pb-6">
-                      <div className="py-2 font-ft-bold text-lg md:text-xl">
+                      <div className="py-2 font-ft-bold text-lg lg:text-xl">
                         Ideation
                       </div>
                       <div className="font-ikob-reg text-base">
@@ -194,27 +194,27 @@ export default function Nfl() {
                         what exactly we wanted to do.
                       </div>
                     </div>
-                    <div className="flex w-full flex-row justify-center  self-center pb-6 md:flex-row md:space-x-2 md:space-y-0">
+                    <div className="flex w-full flex-row justify-center  self-center pb-6 lg:flex-row lg:space-x-2 lg:space-y-0">
                       <Image
                         src={whiteboard1}
                         alt="whiteboard 1"
                         loading="lazy"
-                        className="w-1/4 md:w-1/3"
+                        className="w-1/4 lg:w-1/3"
                       />
                       <Image
                         src={whiteboard2}
                         alt="whiteboard 1"
                         loading="lazy"
-                        className="w-1/4 md:w-1/3"
+                        className="w-1/4 lg:w-1/3"
                       />
                       <Image
                         src={whiteboard3}
                         alt="whiteboard 1"
                         loading="lazy"
-                        className="w-1/4 md:w-1/3"
+                        className="w-1/4 lg:w-1/3"
                       />
                     </div>
-                    <div className="py-2 font-ft-bold text-lg md:text-xl">
+                    <div className="py-2 font-ft-bold text-lg lg:text-xl">
                       Eventually, we boiled it down to a few key user needs:
                     </div>
                     <div className="pb-6 font-ikob-reg text-base">
@@ -289,22 +289,22 @@ export default function Nfl() {
                 </div>
               </div>
               <div className="flex flex-1">
-                <div className="flex flex-col items-baseline py-4 md:flex-row">
-                  <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl md:w-1/4">
+                <div className="flex flex-col items-baseline py-4 lg:flex-row">
+                  <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl lg:w-1/4">
                     The Result
                   </div>
                   <div className="flex flex-1 flex-col">
                     <div className="flex flex-1 flex-col items-center lg:flex-row">
                       <div className="pb-6">
-                        <div className="py-2 font-ft-bold text-lg md:text-xl">
+                        <div className="py-2 font-ft-bold text-lg lg:text-xl">
                           NFL Game Sense is a Live Multicam In-Stadium
                           Experience
                         </div>
-                        <div className="hidden py-2 font-ft-bold text-lg md:block md:text-xl">
+                        <div className="hidden py-2 font-ft-bold text-lg lg:block lg:text-xl">
                           NFL Game Sense is a Live Multicam In-Stadium
                           Experience
                         </div>
-                        <div className="hidden py-2 font-ft-bold text-lg md:block md:text-xl">
+                        <div className="hidden py-2 font-ft-bold text-lg lg:block lg:text-xl">
                           NFL Game Sense is a Live Multicam In-Stadium
                           Experience
                         </div>
@@ -316,11 +316,11 @@ export default function Nfl() {
                         loop
                         playsInline
                         preload="metadata"
-                        className="w-1/2  pb-6 md:w-1/3"
+                        className="w-1/2  pb-6 lg:w-1/3"
                       />
                     </div>
                     <div className="pb-6">
-                      <div className="py-2 font-ft-bold text-lg md:text-xl">
+                      <div className="py-2 font-ft-bold text-lg lg:text-xl">
                         Watch the game live from multiple angles, watch the
                         replay from the best angles
                       </div>
@@ -340,47 +340,47 @@ export default function Nfl() {
                       />
                     </div>
                     <div className="pb-6">
-                      <div className="py-2 font-ft-bold text-lg md:text-xl">
+                      <div className="py-2 font-ft-bold text-lg lg:text-xl">
                         See insights, stats, and predictions to help you follow
                         and understand all the big moments
                       </div>
                     </div>
-                    <div className="flex w-full flex-row justify-center  self-center pb-6 md:flex-row md:space-x-2 md:space-y-0">
+                    <div className="flex w-full flex-row justify-center  self-center pb-6 lg:flex-row lg:space-x-2 lg:space-y-0">
                       <Image
                         src={stats1}
                         alt="stats mockup 1"
                         loading="lazy"
-                        className="w-1/4 md:w-1/3"
+                        className="w-1/4 lg:w-1/3"
                       />
                       <Image
                         src={stats2}
                         alt="stats mockup 2"
                         loading="lazy"
-                        className="w-1/4 md:w-1/3"
+                        className="w-1/4 lg:w-1/3"
                       />
                       <Image
                         src={stats3}
                         alt="stats mockup 3"
                         loading="lazy"
-                        className="w-1/4 md:w-1/3"
+                        className="w-1/4 lg:w-1/3"
                       />
                     </div>
-                    <div className="flex w-full flex-row justify-center  self-center pb-6 md:flex-row md:space-x-2 md:space-y-0">
+                    <div className="flex w-full flex-row justify-center  self-center pb-6 lg:flex-row lg:space-x-2 lg:space-y-0">
                       <Image
                         src={stats4}
                         alt="stats mockup 4"
                         loading="lazy"
-                        className="w-1/4 md:w-1/2"
+                        className="w-1/4 lg:w-1/2"
                       />
                       <Image
                         src={stats5}
                         alt="stats mockup 5"
                         loading="lazy"
-                        className="w-1/4 md:w-1/2"
+                        className="w-1/4 lg:w-1/2"
                       />
                     </div>
                     <div className="pb-6">
-                      <div className="py-2 font-ft-bold text-lg md:text-xl">
+                      <div className="py-2 font-ft-bold text-lg lg:text-xl">
                         Replay stats experience
                       </div>
                     </div>
@@ -402,57 +402,60 @@ export default function Nfl() {
                 </div>
               </div>
               <div className="flex flex-1">
-                <div className="flex flex-col items-baseline py-4 md:flex-row">
-                  <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl md:w-1/4">
+                <div className="flex flex-col items-baseline py-4 lg:flex-row">
+                  <div className="baseline sticky top-4 pb-4 font-ft-bold text-xl lg:w-1/4">
                     Relfection
                   </div>
-                  <div className="pb-6">
-                    <div className="py-2 font-ft-bold text-lg md:text-xl">
-                      While this was one of the most hectic projects I have ever
-                      been on, it was also one of the most exciting. I think
-                      this will go down my favorite thing I have done at the
-                      NFL.
+                  <div className="flex flex-1 flex-col">
+                    <div className="pb-6">
+                      <div className="py-2 font-ft-bold text-lg lg:text-xl">
+                        While this was one of the most hectic projects I have
+                        ever been on, it was also one of the most exciting. I
+                        think this will go down my favorite thing I have done at
+                        the NFL.
+                      </div>
+                      <div className="font-ikob-reg text-base">
+                        Our pitch was extremely well received and the room was
+                        on board right away. The artifacts we created throughout
+                        the process were not only helpful to us while ideating
+                        and designing but also invaluable during our
+                        presentation in order to tell the story of our
+                        experience. The room really enjoyed seeing the journey
+                        map and storyboard and the prototype was the push we
+                        needed to really &ldquo;wow&rdquo; them. <br />
+                        <br />
+                        We were prepared to defend our designs but we
+                        didn&apos;t have to. Instead the room was talking
+                        amongst themselves about what next steps needed to be
+                        taken in order for this project to be ready by Super
+                        Bowl. Having worked so hard and after putting in so many
+                        hours into the project, it was a great feeling to see
+                        our work striking a chord.
+                      </div>
                     </div>
-                    <div className="font-ikob-reg text-base">
-                      Our pitch was extremely well received and the room was on
-                      board right away. The artifacts we created throughout the
-                      process were not only helpful to us while ideating and
-                      designing but also invaluable during our presentation in
-                      order to tell the story of our experience. The room really
-                      enjoyed seeing the journey map and storyboard and the
-                      prototype was the push we needed to really
-                      &ldquo;wow&rdquo; them. <br />
-                      <br />
-                      We were prepared to defend our designs but we didn&apos;t
-                      have to. Instead the room was talking amongst themselves
-                      about what next steps needed to be taken in order for this
-                      project to be ready by Super Bowl. Having worked so hard
-                      and after putting in so many hours into the project, it
-                      was a great feeling to see our work striking a chord.
+                    <div className="w-full self-center py-2 text-center font-ft-bold text-lg lg:w-2/3 lg:text-xl">
+                      Working with my team on this project — mishaps, stress,
+                      and existential crisis included — was one of the most
+                      enjoyable and empowering moments of my UX career so far.
                     </div>
-                  </div>
-                  <div className="w-full self-center py-2 text-center font-ft-bold text-lg md:w-2/3 md:text-xl">
-                    Working with my team on this project — mishaps, stress, and
-                    existential crisis included — was one of the most enjoyable
-                    and empowering moments of my UX career so far.
-                  </div>
-                  <div className="pb-6">
-                    <div className="py-2 font-ft-bold text-lg md:text-xl">
-                      Bonus
+                    <div className="pb-6">
+                      <div className="py-2 font-ft-bold text-lg lg:text-xl">
+                        Bonus
+                      </div>
+                      <div className="font-ikob-reg text-base">
+                        A press video I found of our work while writing this
+                        case study that made me happy &#9786;
+                      </div>
                     </div>
-                    <div className="font-ikob-reg text-base">
-                      A press video I found of our work while writing this case
-                      study that made me happy &#9786;
-                    </div>
-                  </div>
-                  <div className="flex w-full justify-center pb-6">
-                    <div className="video-container">
-                      <iframe
-                        width="640"
-                        height="360"
-                        src="https://www.youtube.com/embed/stE074a8QJs"
-                        title="YouTube Video"
-                      />
+                    <div className="flex w-full justify-center pb-6">
+                      <div className="video-container">
+                        <iframe
+                          width="640"
+                          height="360"
+                          src="https://www.youtube.com/embed/stE074a8QJs"
+                          title="YouTube Video"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
