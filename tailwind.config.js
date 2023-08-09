@@ -28,6 +28,7 @@ module.exports = {
       'ikob-reg': ['var(--font-ikobreg)', 'serif'],
       'ikob-italic': ['var(--font-ikobitalic)', 'serif'],
       'ikob-bold': ['var(--font-ikobbold)', 'serif'],
+      japanese: ['var(--font-japanese)', 'ui-monospace'],
     },
     colors: {
       white: '#FCFCFC',

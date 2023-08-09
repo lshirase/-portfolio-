@@ -34,7 +34,7 @@ export default function Home() {
                 imageSrc={logo}
                 text="1. co-op solutions"
               />
-              <LinkHover link="wrld" imageSrc={spinner} text="2. wrld3d" />
+              <LinkHover link="wrld" imageSrc={spinner} text="2. wrld" />
               <LinkHover link="nfl" imageSrc={nfl1} text="3. nfl + verizon" />
               <LinkHover link="coop" imageSrc={tulip} text="4. graphics etc" />
             </ol>
@@ -43,7 +43,7 @@ export default function Home() {
                 <li>1. co-op solutions</li>
               </Link>
               <Link href="wrld" passHref>
-                <li>2. wrld3d</li>
+                <li>2. wrld</li>
               </Link>
               <Link href="nfl" passHref>
                 <li>3. nfl + verizon</li>
