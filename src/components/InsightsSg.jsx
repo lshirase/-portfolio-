@@ -116,7 +116,7 @@ export function InsightsSg({ handleSectionChange }) {
                 <div className="pb-4 font-ikob-reg text-base">
                   From collecting and cleaning up the data to making it into a
                   presentation, the creation of the High Level Review spans
-                  multiple systems and is extremely time consuming.
+                  multiple systems and is extremely time-consuming.
                 </div>
 
                 <div className="py-2 font-ft-bold text-lg lg:text-xl">

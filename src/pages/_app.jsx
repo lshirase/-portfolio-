@@ -45,6 +45,10 @@ const ikobbold = localFont({
   variable: '--font-ikobbold',
 })
 
+const japanese = localFont({
+  src: '../../src/fonts/MadouFutoMaruGothic.woff2',
+  variable: '--font-japanese',
+})
 function usePrevious(value) {
   let ref = useRef()
 
@@ -61,7 +65,7 @@ export default function App({ Component, pageProps, router }) {
   return (
     <>
       <div
-        className={`${ftreg.variable} ${ftitalic.variable} ${ftbold.variable} ${ftserif.variable} ${ftexpand.variable} ${ikobreg.variable} ${ikobitalic.variable} ${ikobbold.variable}relative`}
+        className={`${ftreg.variable} ${ftitalic.variable} ${ftbold.variable} ${ftserif.variable} ${ftexpand.variable} ${ikobreg.variable} ${ikobitalic.variable} ${ikobbold.variable} ${japanese.variable} relative`}
       >
         <main className="">
           <Component previousPathname={previousPathname} {...pageProps} />

@@ -125,7 +125,7 @@ export default function Wrld() {
                       </div>
                       <div className="font-ikob-reg text-base">
                         A technical requirement of this project required us to
-                        think outside of the box to find a solution that would
+                        think outside the box to find a solution that would
                         allow for the client to customize the site without
                         having to touch code. We decided to use React Bricks, a
                         headless CMS that allows for the creation of custom
