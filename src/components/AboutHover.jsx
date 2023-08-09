@@ -24,6 +24,13 @@ export function AboutHover({ imageList, text, link }) {
     setIsHovered(!isHovered)
   }
 
+  const handleClick = () => {
+    setIsHovered(false)
+  }
+  const handleHoverOut = () => {
+    setIsHovered(false)
+  }
+
   const imageStyle = {
     position: 'fixed',
     right: 0,
@@ -37,7 +44,8 @@ export function AboutHover({ imageList, text, link }) {
       href={link}
       passHref
       onMouseEnter={handleHover}
-      onMouseLeave={handleHover}
+      onMouseLeave={handleHoverOut}
+      onClick={handleClick}
       className="font-ft-italic text-xs hover:text-green"
     >
       {text}

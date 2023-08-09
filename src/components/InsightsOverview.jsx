@@ -196,10 +196,10 @@ export function InsightsOverview({ handleSectionChange }) {
                       and Credit Union members
                     </li>
                     <li>
-                      We spoke with 7 Insights Center stakeholders and subject
-                      matter experts across the organization to understand the
-                      state of the organization, employees’ pain points and
-                      their thoughts on the clients’ experience
+                      We spoke with 7 Insights Center stakeholders and
+                      subject-matter experts across the organization to
+                      understand the state of the organization, employees’ pain
+                      points and their thoughts on the clients’ experience
                     </li>
                   </ul>
                 </div>
@@ -257,10 +257,10 @@ export function InsightsOverview({ handleSectionChange }) {
                 <div className="pb-4 font-ikob-reg text-base">
                   During our testing, we successfully identified alternative
                   platforms used by credit union employees instead of Insights
-                  Center. Exploration the current iteration of Insights Center
-                  along with the alternative platforms gave us a good idea of
-                  the current landscape of reporting and what we needed to
-                  support.
+                  Center. Exploration of the current iteration of Insights
+                  Center along with the alternative platforms gave us a good
+                  idea of the current landscape of reporting and what we needed
+                  to support.
                 </div>
               </div>
               <div className="flex w-full self-center pb-6">
@@ -446,7 +446,7 @@ export function InsightsOverview({ handleSectionChange }) {
                   direction of the back-end team to a great degree but I wish we
                   had conversations sooner on the importance integrating a wider
                   range of data then they currently have as it caused some
-                  bottle-necks later down the line. Good news is that the first
+                  bottlenecks later down the line. Good news is that the first
                   slice of Insights Center modern experience is currently in
                   development, starting with restructuring the back-end.
                 </div>

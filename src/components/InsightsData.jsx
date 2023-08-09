@@ -65,7 +65,7 @@ export function InsightsData({ handleSectionChange }) {
                   prioritize first and how they are all connected. For an
                   example, we could trace something like PIN back to the other
                   attributes are connected to it (Plastic Card, Authentication,
-                  and etc.).
+                  etc.).
                 </div>
                 <div className="flex flex-col">
                   <div className="flex w-full self-center pb-6">
@@ -129,7 +129,7 @@ export function InsightsData({ handleSectionChange }) {
                 </div>
                 <div className="font-ikob-reg text-base">
                   In order to have a cohesive report, we made the choice of
-                  having report wide filters available to user, giving the
+                  having report wide filters available to the user, giving the
                   ability to create sweeping changes instantly. As we began to
                   learn more about how the data worked and through extensive
                   user testing, we later revised this design (more on that
@@ -272,7 +272,7 @@ export function InsightsData({ handleSectionChange }) {
                   <br />
                   It is clear how the transaction hierarchy influenced the
                   designs, as seen with the Activity Type as the first option,
-                  which will change all of the options below it.
+                  which will change all the options below it.
                   <br />
                   <br />
                   We chose to remove dropdowns and showcase each filter element

@@ -2,15 +2,19 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 import { Header } from '@/components/Header'
-import { LinkHover } from '@/components/LinkHover'
-import VideoPlayer from '@/components/VideoPlayer'
-import VideoPlayerMobile from '@/components/VideoPlayerMobile'
-import spinner from '@/images/wrld/wrld_spinner1.gif'
-import logo from '@/images/logo.png'
-import nfl1 from '@/images/nfl/nfl1.png'
-import tulip from '@/images/tulip.png'
+import { AboutImages } from '@/components/AboutImages'
+import cat from '@/images/about/cat.jpg'
+import hold from '@/images/about/climbing2.jpg'
+import clyde1 from '@/images/about/clyde1.jpg'
+import clyde2 from '@/images/about/clyde2.jpg'
+import me1 from '@/images/about/me1.jpg'
+import me2 from '@/images/about/me2.jpg'
+import me3 from '@/images/about/me3.jpg'
+import me4 from '@/images/about/me4.jpg'
+import red1 from '@/images/about/red1.jpg'
+import red2 from '@/images/about/red2.jpg'
 
-const videos = ['/magic2.webm', '/tulip2.webm', '/dinho1.webm', '/tiger3.webm']
+const imageList = [me1, clyde1, me2, hold, red1, me3, cat, red2, me4, clyde2]
 
 export default function About() {
   return (
@@ -25,13 +29,15 @@ export default function About() {
       <div className="flex w-screen flex-col overflow-x-hidden bg-white text-black lg:h-screen">
         <Header bgWhite />
         <div className="flex flex-col px-6 pt-4 text-xs lg:flex-row lg:px-12 lg:pt-0">
-          <div className="flex flex-col  lg:w-[54rem]">
-            <div className="font-japanese text-2xl">はじめまして。</div>
-            <div className="font-ft-serif text-xl">
-              I am a Los Angeles based multi-displinary designer with a fondness
-              for function.
-              <br />
-              Recently into Processing and p5.js
+          <div className="flex flex-col  pb-6 lg:w-[40rem] lg:pb-0 lg:pr-24">
+            <div className="text-2xl font-bold">はじめまして。</div>
+            <div className="pb-2 font-ikob-reg text-base">
+              I am a Los Angeles based multi-disciplinary designer (and
+              developer) with a fondness for function. I love to work on all
+              kinds of things, so please don&apos;t hesitate to reach out :^).
+            </div>
+            <div className="w-full cursor-pointer">
+              <AboutImages imageList={imageList} />
             </div>
           </div>
           <div className="flex flex-col lg:w-1/3">
