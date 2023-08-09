@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import placeholder from '@/images/placeholder.png'
 
 import { Header } from '@/components/Header'
 import { LinkHover } from '@/components/LinkHover'
@@ -36,7 +35,11 @@ export default function Home() {
               />
               <LinkHover link="wrld" imageSrc={spinner} text="2. wrld" />
               <LinkHover link="nfl" imageSrc={nfl1} text="3. nfl + verizon" />
-              <LinkHover link="coop" imageSrc={tulip} text="4. graphics etc" />
+              <LinkHover
+                link="graphics"
+                imageSrc={tulip}
+                text="4. graphics etc"
+              />
             </ol>
             <ol className="z-50 font-ft-serif md:hidden">
               <Link href="coop" passHref>
@@ -48,7 +51,7 @@ export default function Home() {
               <Link href="nfl" passHref>
                 <li>3. nfl + verizon</li>
               </Link>
-              <Link href="coop" passHref>
+              <Link href="graphics" passHref>
                 <li>4. graphics etc</li>
               </Link>
             </ol>

@@ -53,6 +53,15 @@ export default function About() {
               <div className="font-ikob-italic text-sm">
                 NFL, User Experience Designer
               </div>
+              <div className="font-ikob-italic text-sm">
+                BeyondCurious, Experience Intern
+              </div>
+              <div className="font-ikob-italic text-sm">
+                Fandango, User Experience Intern
+              </div>
+              <div className="font-ikob-italic text-sm">
+                Palisades Post, Layout Editor
+              </div>
             </div>
             <div className="flex-col pb-2">
               <div className="font-ikob-bold text-sm">Clients</div>
@@ -87,8 +96,36 @@ export default function About() {
             </div>
             <div className="flex-col pb-2">
               <div className="font-ikob-bold text-sm">Contact</div>
-              <div className="font-ikob-italic text-sm">
-                lenshirase@gmail.com
+              <div>
+                <a
+                  href="mailto:lenshirase@gmail.com"
+                  className="font-ikob-italic text-sm"
+                >
+                  lenshirase@gmail.com
+                </a>
+              </div>
+            </div>
+            <div className="flex-col pb-2">
+              <div className="font-ikob-bold text-sm">Socials</div>
+              <div>
+                <a
+                  href="https://www.instagram.com/lshirase/"
+                  className="font-ikob-italic text-sm"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Instagram
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://www.linkedin.com/in/lshirase/"
+                  className="font-ikob-italic text-sm"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Linkedin
+                </a>
               </div>
             </div>
           </div>
