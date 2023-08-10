@@ -13,8 +13,25 @@ import me3 from '@/images/about/me3.jpg'
 import me4 from '@/images/about/me4.jpg'
 import red1 from '@/images/about/red1.jpg'
 import red2 from '@/images/about/red2.jpg'
+import HorizontalScroll from '@/components/HorizontalCarousel'
+import CarouselItem from '@/components/CarouselItem'
 
 const imageList = [me1, clyde1, me2, hold, red1, me3, cat, red2, me4, clyde2]
+const items = [
+  <CarouselItem
+    title="The Brand Identity Posters"
+    content="Your content here"
+    img={imageList[1]}
+    key={1}
+  />,
+  <CarouselItem
+    title="Konvooi, Booklet, 2022"
+    content="Your content here"
+    img={imageList[1]}
+    key={2}
+  />,
+  // Add more items as needed
+]
 
 export default function Graphics() {
   return (
@@ -26,9 +43,14 @@ export default function Graphics() {
           content="Len Shirase, I'm a designer and developer based in Los Angeles, California."
         />
       </Head>
-      <div className="flex w-screen flex-col overflow-x-hidden bg-white text-black lg:h-screen">
+      <div className="flex h-screen w-screen flex-col bg-white text-black lg:h-screen">
         <Header bgWhite />
-        <div className="flex flex-col px-6 pt-4 text-xs lg:flex-row lg:px-12 lg:pt-0"></div>
+        <div className="h-1/2 w-full px-4">
+          <h1 className="mb-8 text-center text-3xl font-bold">
+            Horizontal Scroll
+          </h1>
+          <HorizontalScroll />
+        </div>
       </div>
     </>
   )
