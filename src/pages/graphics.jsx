@@ -45,11 +45,10 @@ export default function Graphics() {
       </Head>
       <div className="flex h-screen w-screen flex-col bg-white text-black lg:h-screen">
         <Header bgWhite />
-        <div className="h-1/2 w-full px-4">
-          <h1 className="mb-8 text-center text-3xl font-bold">
-            Horizontal Scroll
-          </h1>
-          <HorizontalScroll />
+        <div className="flex w-screen flex-col px-6 pt-4 lg:px-12 lg:pt-0">
+          <div>
+            <HorizontalScroll />
+          </div>
         </div>
       </div>
     </>

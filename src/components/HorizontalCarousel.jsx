@@ -24,61 +24,63 @@ const HorizontalScroll = ({ items }) => {
   return (
     <Swiper
       direction="horizontal"
-      slidesPerView={2}
-      spaceBetween={0}
+      slidesPerView={1}
+      spaceBetween={5}
       mousewheel
-      navigation
+      freeMode
+      centeredSlides={false}
       style={{ height: '100%' }}
-      loop
+      breakpoints={{
+        768: {
+          slidesPerView: 3.2,
+          spaceBetween: 10,
+        },
+      }}
     >
       {/* {items.map((item, index) => ( */}
       <SwiperSlide>
+        <CarouselItem title="The Brand Identity Posters" images={imageList} />
+      </SwiperSlide>
+      <SwiperSlide>
         <CarouselItem
           title="The Brand Identity Posters"
           content="Your content here"
-          img={imageList[1]}
+          images={imageList}
         />
       </SwiperSlide>
       <SwiperSlide>
         <CarouselItem
           title="The Brand Identity Posters"
           content="Your content here"
-          img={imageList[2]}
+          images={imageList}
         />
       </SwiperSlide>
       <SwiperSlide>
         <CarouselItem
           title="The Brand Identity Posters"
           content="Your content here"
-          img={imageList[3]}
+          images={imageList}
         />
       </SwiperSlide>
       <SwiperSlide>
         <CarouselItem
           title="The Brand Identity Posters"
           content="Your content here"
-          img={imageList[4]}
+          images={imageList}
         />
       </SwiperSlide>
       <SwiperSlide>
         <CarouselItem
           title="The Brand Identity Posters"
           content="Your content here"
-          img={imageList[1]}
+          images={imageList}
         />
       </SwiperSlide>
       <SwiperSlide>
         <CarouselItem
           title="The Brand Identity Posters"
           content="Your content here"
-          img={imageList[2]}
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <CarouselItem
-          title="The Brand Identity Posters"
-          content="Your content here"
-          img={imageList[3]}
+          images={imageList}
         />
       </SwiperSlide>
     </Swiper>
