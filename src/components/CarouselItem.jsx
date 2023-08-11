@@ -31,10 +31,7 @@ const CarouselItem = ({ title, content, images }) => {
         )}
       </div>
       {showInfo ? (
-        <div className="h-full pt-4 font-ft-serif text-lg">
-          A series of designs for Millcross to be used on shirts, tote bags,
-          etc.
-        </div>
+        <div className="h-full pt-4 font-ft-serif text-lg">{content}</div>
       ) : (
         <div onClick={handleNext}>
           <Image src={imageSrc} alt="Image from list" className="w-full" />

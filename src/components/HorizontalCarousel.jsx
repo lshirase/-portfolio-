@@ -14,9 +14,15 @@ import sabina from '@/images/graphics/1/card.jpg'
 
 import melissacard from '@/images/graphics/2/bluecard.jpg'
 
+import bbposter from '@/images/graphics/bbposter.jpg'
+
+import bbillustration from '@/images/graphics/bbill.jpg'
+
 SwiperCore.use([Mousewheel, FreeMode])
 const millcrossMerch = [tulip, sabina, cherub, sign]
 const melissa = [melissacard]
+const bbp = [bbposter]
+const bbi = [bbillustration]
 
 const HorizontalScroll = ({ items }) => {
   return (
@@ -37,11 +43,11 @@ const HorizontalScroll = ({ items }) => {
           slidesPerView: '2.2',
         },
         1280: {
-          slidesPerView: '3.2',
+          slidesPerView: '2.8',
           spaceBetween: 10,
         },
         1536: {
-          slidesPerView: '4.2',
+          slidesPerView: '3.6',
           spaceBetween: 10,
         },
       }}
@@ -50,7 +56,8 @@ const HorizontalScroll = ({ items }) => {
       <SwiperSlide>
         <CarouselItem
           title="Millcross, Various Designs"
-          content="Your content here"
+          content="A series of designs for Millcross to be used on shirts, tote bags,
+          etc."
           images={millcrossMerch}
         />
       </SwiperSlide>
@@ -58,25 +65,10 @@ const HorizontalScroll = ({ items }) => {
         <CarouselItem title="Business Card" images={melissa} />
       </SwiperSlide>
       <SwiperSlide>
-        <CarouselItem
-          title="The Brand Identity Posters"
-          content="Your content here"
-          images={millcrossMerch}
-        />
+        <CarouselItem title="Beyond Baroque, Poster" images={bbp} />
       </SwiperSlide>
       <SwiperSlide>
-        <CarouselItem
-          title="The Brand Identity Posters"
-          content="Your content here"
-          images={millcrossMerch}
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <CarouselItem
-          title="The Brand Identity Posters"
-          content="Your content here"
-          images={millcrossMerch}
-        />
+        <CarouselItem title="Beyond Baroque, Illustration" images={bbi} />
       </SwiperSlide>
       <SwiperSlide>
         <CarouselItem
