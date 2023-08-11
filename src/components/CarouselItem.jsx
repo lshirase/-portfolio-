@@ -18,7 +18,7 @@ const CarouselItem = ({ title, content, images }) => {
   const imageSrc = images[currentIndex]
 
   return (
-    <div className="swiper-slide relative flex h-full w-[300px] flex-col md:w-[400px] lg:w-[600px]">
+    <div className="swiper-slide relative flex h-full w-full md:w-auto">
       <div className="flex justify-between font-ft-serif text-xs">
         <div className="flex space-x-2">
           <div className="font-ft-bold">{title}</div>
@@ -34,7 +34,7 @@ const CarouselItem = ({ title, content, images }) => {
         <div className="h-full bg-blue">yo</div>
       ) : (
         <div onClick={handleNext}>
-          <Image src={imageSrc} alt="Image from list" className="w-full" />
+          <Image src={imageSrc} alt="Image from list" className="" />
         </div>
       )}
     </div>
