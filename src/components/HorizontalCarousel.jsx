@@ -1,26 +1,22 @@
 import React from 'react'
 import SwiperCore from 'swiper'
-import { Navigation, Pagination, Scrollbar, Mousewheel } from 'swiper/modules'
+import { Mousewheel, FreeMode } from 'swiper/modules'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 
 import CarouselItem from './CarouselItem'
-import cat from '@/images/about/cat.jpg'
-import hold from '@/images/about/climbing2.jpg'
-import clyde1 from '@/images/about/clyde1.jpg'
-import clyde2 from '@/images/about/clyde2.jpg'
-import me1 from '@/images/about/me1.jpg'
-import me2 from '@/images/about/me2.jpg'
-import me3 from '@/images/about/me3.jpg'
-import me4 from '@/images/about/me4.jpg'
-import red1 from '@/images/about/red1.jpg'
-import red2 from '@/images/about/red2.jpg'
-import tulip from '@/images/graphics/1/tulipfull.jpg'
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, Mousewheel])
-const imageList = [me1, clyde1, me2, hold, red1, me3, cat, red2, me4, clyde2]
-const image = [tulip]
+import tulip from '@/images/graphics/1/tulipfull.jpg'
+import cherub from '@/images/graphics/1/cherubv2.jpg'
+import sign from '@/images/graphics/1/sign.jpg'
+import sabina from '@/images/graphics/1/card.jpg'
+
+import melissacard from '@/images/graphics/2/bluecard.jpg'
+
+SwiperCore.use([Mousewheel, FreeMode])
+const millcrossMerch = [tulip, sabina, cherub, sign]
+const melissa = [melissacard]
 
 const HorizontalScroll = ({ items }) => {
   return (
@@ -31,7 +27,7 @@ const HorizontalScroll = ({ items }) => {
       mousewheel
       freeMode
       centeredSlides={false}
-      style={{ height: 'auto' }}
+      // style={{ height: '100%', width: 'auto' }}
       breakpoints={{
         768: {
           slidesPerView: 'auto',
@@ -45,7 +41,7 @@ const HorizontalScroll = ({ items }) => {
           spaceBetween: 10,
         },
         1536: {
-          slidesPerView: '3.2',
+          slidesPerView: '4.2',
           spaceBetween: 10,
         },
       }}
@@ -55,42 +51,38 @@ const HorizontalScroll = ({ items }) => {
         <CarouselItem
           title="Millcross, Various Designs"
           content="Your content here"
-          images={image}
+          images={millcrossMerch}
+        />
+      </SwiperSlide>
+      <SwiperSlide>
+        <CarouselItem title="Business Card" images={melissa} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <CarouselItem
+          title="The Brand Identity Posters"
+          content="Your content here"
+          images={millcrossMerch}
         />
       </SwiperSlide>
       <SwiperSlide>
         <CarouselItem
           title="The Brand Identity Posters"
           content="Your content here"
-          images={imageList}
+          images={millcrossMerch}
         />
       </SwiperSlide>
       <SwiperSlide>
         <CarouselItem
           title="The Brand Identity Posters"
           content="Your content here"
-          images={imageList}
+          images={millcrossMerch}
         />
       </SwiperSlide>
       <SwiperSlide>
         <CarouselItem
           title="The Brand Identity Posters"
           content="Your content here"
-          images={imageList}
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <CarouselItem
-          title="The Brand Identity Posters"
-          content="Your content here"
-          images={imageList}
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <CarouselItem
-          title="The Brand Identity Posters"
-          content="Your content here"
-          images={imageList}
+          images={millcrossMerch}
         />
       </SwiperSlide>
     </Swiper>
