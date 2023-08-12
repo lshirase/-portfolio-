@@ -113,9 +113,7 @@ const HorizontalScroll = () => {
               histories that led to this current movement, and tackle the
               pressing tasks of abolishing police and building a just new world.
               @zilcraft and @penttigram will present unique protest art
-              illustrating those ideas. Water and sunscreen will be provided on
-              site for all who attend. To ensure safety, we ask that you wear
-              masks, and social distancing is encouraged.
+              illustrating those ideas.
             </>
           }
         />
