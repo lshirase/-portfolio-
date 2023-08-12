@@ -13,6 +13,7 @@ export function AboutImages({ imageList }) {
       src={imageList[currentImageIndex]}
       alt="image from list"
       onClick={handleImageClick}
+      priority
     />
   )
 }
