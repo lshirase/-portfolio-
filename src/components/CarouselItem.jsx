@@ -25,7 +25,7 @@ const CarouselItem = ({ title, content, images }) => {
           <div>{`${currentIndex + 1} of ${images.length}`}</div>
         </div>
         {content && (
-          <div onClick={toggleInfo} className="cursor-pointer">
+          <div onClick={toggleInfo} className="cursor-pointer font-ft-italic">
             {showInfo ? 'Images' : 'Info'}
           </div>
         )}
@@ -33,7 +33,7 @@ const CarouselItem = ({ title, content, images }) => {
       {showInfo ? (
         <div className="h-full pt-4 font-ft-serif text-lg">{content}</div>
       ) : (
-        <div onClick={handleNext}>
+        <div onClick={handleNext} className="cursor-pointer">
           <Image src={imageSrc} alt="Image from list" className="w-full" />
         </div>
       )}

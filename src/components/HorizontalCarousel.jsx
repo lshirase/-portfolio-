@@ -18,11 +18,19 @@ import bbposter from '@/images/graphics/bbposter.jpg'
 
 import bbillustration from '@/images/graphics/bbill.jpg'
 
+import mc1 from '@/images/graphics/3/mc1.jpg'
+import mc2 from '@/images/graphics/3/mc2.jpg'
+import mc3 from '@/images/graphics/3/mc3.jpg'
+import mc4 from '@/images/graphics/3/mc4.jpg'
+import mc5 from '@/images/graphics/3/mc5.jpg'
+import mc6 from '@/images/graphics/3/mc6.jpg'
+
 SwiperCore.use([Mousewheel, FreeMode])
 const millcrossMerch = [tulip, sabina, cherub, sign]
 const melissa = [melissacard]
 const bbp = [bbposter]
 const bbi = [bbillustration]
+const mc = [mc1, mc2, mc3, mc4, mc5, mc6]
 
 const HorizontalScroll = ({ items }) => {
   return (
@@ -55,8 +63,8 @@ const HorizontalScroll = ({ items }) => {
       {/* {items.map((item, index) => ( */}
       <SwiperSlide>
         <CarouselItem
-          title="Millcross, Various Designs"
-          content="A series of designs for Millcross to be used on shirts, tote bags,
+          title="MillCross, Various Designs"
+          content="A series of designs for MillCross to be used on shirts, tote bags,
           etc."
           images={millcrossMerch}
         />
@@ -65,16 +73,38 @@ const HorizontalScroll = ({ items }) => {
         <CarouselItem title="Business Card" images={melissa} />
       </SwiperSlide>
       <SwiperSlide>
-        <CarouselItem title="Beyond Baroque, Poster" images={bbp} />
+        <CarouselItem
+          title="MillCross, Coffee Bag Stickers"
+          content="A series of coffee bag stickers for MillCross, to be used across their wide range of coffee offerings."
+          images={mc}
+        />
       </SwiperSlide>
       <SwiperSlide>
         <CarouselItem title="Beyond Baroque, Illustration" images={bbi} />
       </SwiperSlide>
       <SwiperSlide>
         <CarouselItem
-          title="The Brand Identity Posters"
-          content="Your content here"
-          images={millcrossMerch}
+          title="Beyond Baroque, Poster"
+          images={bbp}
+          content={
+            <>
+              A poster for a talk at Beyond Baroque.
+              <br />
+              <br />
+              Event description: To help further this moment of collective
+              action for justice, we ask that you gather with us for a community
+              talk and vigil addressing racism and police violence in the United
+              States. On the west lawn of Beyond Baroque’s community garden,
+              scholars, poets, and artists, including Dr. Bob Myers (UCLA), and
+              Doctoral Candidate @thabisilegriffin (UCLA) will speak on the
+              histories that led to this current movement, and tackle the
+              pressing tasks of abolishing police and building a just new world.
+              @zilcraft and @penttigram will present unique protest art
+              illustrating those ideas. Water and sunscreen will be provided on
+              site for all who attend. To ensure safety, we ask that you wear
+              masks, and social distancing is encouraged.
+            </>
+          }
         />
       </SwiperSlide>
     </Swiper>
