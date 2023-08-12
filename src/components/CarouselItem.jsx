@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 
+
+
 const CarouselItem = ({ title, content, images }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [showInfo, setShowInfo] = useState(false)
@@ -31,10 +33,12 @@ const CarouselItem = ({ title, content, images }) => {
         )}
       </div>
       {showInfo ? (
-        <div className="h-full pt-4 font-ft-serif text-lg">{content}</div>
+        <div className="h-full pt-4 font-ft-serif text-base lg:text-lg">
+          {content}
+        </div>
       ) : (
         <div onClick={handleNext} className="cursor-pointer">
-          <Image src={imageSrc} alt="Image from list" className="w-full" />
+          <Image src={imageSrc} alt="Image from list" priority />
         </div>
       )}
     </div>
