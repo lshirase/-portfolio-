@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import SwiperCore from 'swiper'
 import { Mousewheel, FreeMode } from 'swiper/modules'
 
@@ -32,14 +32,27 @@ const bbp = [bbposter]
 const bbi = [bbillustration]
 const mc = [mc1, mc2, mc3, mc4, mc5, mc6]
 
-const HorizontalScroll = ({ items }) => {
+const HorizontalScroll = () => {
+  const [isFreeMode, setIsFreeMode] = useState(true)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsFreeMode(window.innerWidth >= 768) // Set freeMode to false on mobile
+    }
+
+    handleResize() // Initial check
+    window.addEventListener('resize', handleResize)
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
   return (
     <Swiper
       direction="horizontal"
       slidesPerView={1}
       spaceBetween={5}
       mousewheel
-      freeMode
+      freeMode={isFreeMode}
       centeredSlides={false}
       // style={{ height: '100%', width: 'auto' }}
       breakpoints={{
