@@ -46,7 +46,7 @@ export default function Graphics() {
       <div className="flex h-screen w-screen flex-col overflow-y-hidden bg-white text-black md:justify-between">
         <Header bgWhite />
         {/* <div className="flex w-screen flex-col px-6 pt-4 lg:px-12 lg:pt-0"> */}
-        <div className="w-full flex-initial justify-end px-6 pt-4 md:pb-6 md:pl-6 md:pt-0  lg:pb-12 lg:pl-12 lg:pr-0">
+        <div className="w-full flex-initial justify-end overflow-y-hidden px-6  pt-4 md:pb-6 md:pl-6 md:pt-0  lg:pb-12 lg:pl-12 lg:pr-0">
           <HorizontalScroll />
         </div>
       </div>
