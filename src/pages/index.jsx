@@ -22,7 +22,7 @@ export default function Home() {
           content="Len Shirase, I'm a designer and developer based in Los Angeles, California."
         />
       </Head>
-      <div className="flex h-screen flex-col md:w-screen ">
+      <div className="flex h-[100dvh] flex-col md:w-screen ">
         <Header bgWhite />
         <div className="inline-flex flex-none flex-row px-6 pt-4 text-xs sm:pt-0 lg:px-12">
           <div className="flex-col">
