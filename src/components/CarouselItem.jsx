@@ -1,19 +1,28 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from 'react'
 import Image from 'next/image'
-
-const CarouselItem = ({ title, content, images }) => {
-  const [currentIndex, setCurrentIndex] = useState(0)
+const CarouselItem = ({ title, content, images, onNextSlide, isMobile }) => {
   const [showInfo, setShowInfo] = useState(false)
-
-  const handleNext = () => {
-    const nextIndex = (currentIndex + 1) % images.length
-    setCurrentIndex(nextIndex)
-  }
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [tappedLastImage, setTappedLastImage] = useState(false)
 
   const toggleInfo = () => {
     setShowInfo(!showInfo)
-    console.log(showInfo)
+  }
+
+  const handleNext = () => {
+    if (images.length === 1) {
+      onNextSlide()
+    }
+    const nextIndex = (currentIndex + 1) % images.length
+    setCurrentIndex(nextIndex)
+    if (!isMobile) return
+    if (nextIndex === images.length - 1 && !tappedLastImage) {
+      setTappedLastImage(true)
+    } else if (nextIndex === 0 && tappedLastImage) {
+      onNextSlide()
+      setTappedLastImage(false)
+    }
   }
 
   const imageSrc = images[currentIndex]
@@ -48,8 +57,8 @@ const CarouselItem = ({ title, content, images }) => {
           {content}
         </div>
       ) : (
-        <div onClick={handleNext} className="cursor-pointer">
-          <img src={imageSrc} alt="Image from list" loading="lazy" />
+        <div className="cursor-pointer" onClick={handleNext}>
+          <img src={imageSrc} alt="Image from list" loading="eager" />
         </div>
       )}
     </div>

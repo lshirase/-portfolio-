@@ -60,18 +60,33 @@ const mc = [
 
 const HorizontalScroll = () => {
   const [isFreeMode, setIsFreeMode] = useState(true)
+  const [swiper, setSwiper] = useState(null)
+  const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
     const handleResize = () => {
-      setIsFreeMode(window.innerWidth >= 768) // Set freeMode to false on mobile
+      setIsFreeMode(window.innerWidth >= 768)
+      setIsMobile(window.innerWidth <= 769)
     }
 
-    handleResize() // Initial check
+    handleResize()
     window.addEventListener('resize', handleResize)
     return () => {
       window.removeEventListener('resize', handleResize)
     }
   }, [])
+
+  // const handleSlideChange = () => {
+  //   if (swiper && isMobile) {
+  //     const activeIndex = swiper.activeIndex
+  //     const totalSlides = swiper.slides.length
+
+  //     if (activeIndex === totalSlides - 1) {
+  //       swiper.slideTo(activeIndex) // Stay on the same slide
+  //     }
+  //   }
+  // }
+
   return (
     <Swiper
       direction="horizontal"
@@ -80,6 +95,8 @@ const HorizontalScroll = () => {
       mousewheel
       freeMode={isFreeMode}
       centeredSlides={false}
+      // onSlideChange={handleSlideChange}
+      onSwiper={(swiperInstance) => setSwiper(swiperInstance)}
       // style={{ height: '100%', width: 'auto' }}
       breakpoints={{
         768: {
@@ -106,20 +123,50 @@ const HorizontalScroll = () => {
           content="A series of designs for MillCross to be used on shirts, tote bags,
           etc."
           images={millcrossMerch}
+          onNextSlide={() => {
+            if (swiper) {
+              swiper.slideNext()
+            }
+          }}
+          isMobile={isMobile}
         />
       </SwiperSlide>
       <SwiperSlide>
-        <CarouselItem title="Business Card" images={melissa} />
+        <CarouselItem
+          title="Business Card"
+          images={melissa}
+          onNextSlide={() => {
+            if (swiper) {
+              swiper.slideNext()
+            }
+          }}
+          isMobile={isMobile}
+        />
       </SwiperSlide>
       <SwiperSlide>
         <CarouselItem
           title="MillCross, Coffee Bag Stickers"
           content="A series of coffee bag stickers for MillCross, to be used across their wide range of coffee offerings."
           images={mc}
+          onNextSlide={() => {
+            if (swiper) {
+              swiper.slideNext()
+            }
+          }}
+          isMobile={isMobile}
         />
       </SwiperSlide>
       <SwiperSlide>
-        <CarouselItem title="Beyond Baroque, Illustration" images={bbi} />
+        <CarouselItem
+          title="Beyond Baroque, Illustration"
+          images={bbi}
+          onNextSlide={() => {
+            if (swiper) {
+              swiper.slideNext()
+            }
+          }}
+          isMobile={isMobile}
+        />
       </SwiperSlide>
       <SwiperSlide>
         <CarouselItem
@@ -142,6 +189,12 @@ const HorizontalScroll = () => {
               illustrating those ideas.
             </>
           }
+          onNextSlide={() => {
+            if (swiper) {
+              swiper.slideNext()
+            }
+          }}
+          isMobile={isMobile}
         />
       </SwiperSlide>
     </Swiper>
