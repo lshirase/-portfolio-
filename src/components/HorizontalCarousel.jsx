@@ -7,30 +7,56 @@ import 'swiper/css'
 
 import CarouselItem from './CarouselItem'
 
-import tulip from '@/images/graphics/1/tulipfull.jpg'
-import cherub from '@/images/graphics/1/cherubv2.jpg'
-import sign from '@/images/graphics/1/sign.jpg'
-import sabina from '@/images/graphics/1/card.jpg'
+// import tulip from '@/images/graphics/1/tulipfull.jpg'
+// import cherub from '@/images/graphics/1/cherubv2.jpg'
+// import sign from '@/images/graphics/1/sign.jpg'
+// import sabina from '@/images/graphics/1/card.jpg'
 
-import melissacard from '@/images/graphics/2/bluecard.jpg'
+// import melissacard from '@/images/graphics/2/bluecard.jpg'
 
-import bbposter from '@/images/graphics/bbposter.jpg'
+// import bbposter from '@/images/graphics/bbposter.jpg'
 
-import bbillustration from '@/images/graphics/bbill.jpg'
+// import bbillustration from '@/images/graphics/bbill.jpg'
 
-import mc1 from '@/images/graphics/3/mc1.jpg'
-import mc2 from '@/images/graphics/3/mc2.jpg'
-import mc3 from '@/images/graphics/3/mc3.jpg'
-import mc4 from '@/images/graphics/3/mc4.jpg'
-import mc5 from '@/images/graphics/3/mc5.jpg'
-import mc6 from '@/images/graphics/3/mc6.jpg'
+// import mc1 from '@/images/graphics/3/mc1.jpg'
+// import mc2 from '@/images/graphics/3/mc2.jpg'
+// import mc3 from '@/images/graphics/3/mc3.jpg'
+// import mc4 from '@/images/graphics/3/mc4.jpg'
+// import mc5 from '@/images/graphics/3/mc5.jpg'
+// import mc6 from '@/images/graphics/3/mc6.jpg'
 
 SwiperCore.use([Mousewheel, FreeMode])
-const millcrossMerch = [tulip, sabina, cherub, sign]
-const melissa = [melissacard]
-const bbp = [bbposter]
-const bbi = [bbillustration]
-const mc = [mc1, mc2, mc3, mc4, mc5, mc6]
+// const millcrossMerch = [tulip, sabina, cherub, sign]
+// const melissa = [melissacard]
+// const bbp = [bbposter]
+// const bbi = [bbillustration]
+// const mc = [mc1, mc2, mc3, mc4, mc5, mc6]
+
+const millcrossMerch = [
+  'https://res.cloudinary.com/dkso10gnx/image/upload/v1691801116/portfolio/tulipfull_qsubhd.jpg',
+  'https://res.cloudinary.com/dkso10gnx/image/upload/v1691801116/portfolio/card_ozmgfc.jpg',
+  'https://res.cloudinary.com/dkso10gnx/image/upload/v1691801116/portfolio/cherubv2_czphz2.jpg',
+  'https://res.cloudinary.com/dkso10gnx/image/upload/v1691801116/portfolio/sign_eivln1.jpg',
+]
+const melissa = [
+  'https://res.cloudinary.com/dkso10gnx/image/upload/v1691801109/portfolio/bluecard_r1fgpw.jpg',
+]
+const bbp = [
+  'https://res.cloudinary.com/dkso10gnx/image/upload/v1691801092/portfolio/bbposter_pfv8cw.jpg',
+]
+const bbi = [
+  'https://res.cloudinary.com/dkso10gnx/image/upload/v1691801092/portfolio/bbill_cghero.jpg',
+]
+const mc = [
+  'https://res.cloudinary.com/dkso10gnx/image/upload/v1691801103/portfolio/mc1_qdmubh.jpg',
+  'https://res.cloudinary.com/dkso10gnx/image/upload/v1691801103/portfolio/mc2_wqou5v.jpg',
+  'https://res.cloudinary.com/dkso10gnx/image/upload/v1691801103/portfolio/mc4_ahhbju.jpg',
+  'https://res.cloudinary.com/dkso10gnx/image/upload/v1691801103/portfolio/mc6_plge2c.jpg',
+  'https://res.cloudinary.com/dkso10gnx/image/upload/v1691801103/portfolio/mc3_i15vaa.jpg',
+  'https://res.cloudinary.com/dkso10gnx/image/upload/v1691801103/portfolio/mc5_f3th8v.jpg',
+]
+
+
 
 const HorizontalScroll = () => {
   const [isFreeMode, setIsFreeMode] = useState(true)

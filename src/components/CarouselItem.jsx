@@ -1,7 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState } from 'react'
 import Image from 'next/image'
-
-
 
 const CarouselItem = ({ title, content, images }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -50,7 +49,7 @@ const CarouselItem = ({ title, content, images }) => {
         </div>
       ) : (
         <div onClick={handleNext} className="cursor-pointer">
-          <Image src={imageSrc} alt="Image from list" priority />
+          <img src={imageSrc} alt="Image from list" loading="lazy" />
         </div>
       )}
     </div>

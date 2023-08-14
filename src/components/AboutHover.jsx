@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -50,7 +51,7 @@ export function AboutHover({ imageList, text, link }) {
     >
       {text}
       {isHovered && (
-        <Image
+        <img
           src={imageList[currentImageIndex]}
           alt="case study image"
           style={imageStyle}
