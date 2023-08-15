@@ -102,7 +102,7 @@ const HorizontalScroll = () => {
     <Swiper
       direction="horizontal"
       slidesPerView="auto"
-      spaceBetween={5}
+      spaceBetween={10}
       mousewheel
       freeMode={isFreeMode}
       centeredSlides={false}

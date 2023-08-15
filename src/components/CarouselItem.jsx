@@ -8,6 +8,7 @@ const CarouselItem = ({ title, content, images, onNextSlide, isMobile }) => {
 
   const toggleInfo = () => {
     setShowInfo(!showInfo)
+    console.log(showInfo)
   }
 
   const handleNext = () => {
@@ -46,7 +47,7 @@ const CarouselItem = ({ title, content, images, onNextSlide, isMobile }) => {
     )
     .join(', ')
   return (
-    <div className="swiper-slide flex">
+    <div className="swiper-slide  flex">
       <div className="hidden justify-between font-ft-serif text-xs sm:flex">
         <div className="flex space-x-2 ">
           <div className="font-ft-bold">{title}</div>
@@ -70,21 +71,33 @@ const CarouselItem = ({ title, content, images, onNextSlide, isMobile }) => {
           )}
         </div>
       </div>
-      <div className="cursor-pointer" onClick={handleNext}>
-        {showInfo ? (
-          <div className="h-full max-w-full pt-4 font-ft-serif text-[0.75rem] sm:text-base lg:text-lg">
-            {content}
-          </div>
-        ) : (
-          <img
-            srcSet={imageSrcset}
-            sizes="(max-width: 640px) 85vw, (max-width: 1024px) 50vw, 25vw"
-            src={`${cloudinaryBaseUrl}/${transformationParams}/${imagePublicId}.jpg`}
-            alt="Image from list"
-            loading="eager"
-          />
-        )}
+      {/* {showInfo ? (
+        <div className="h-full pt-4 font-ft-serif text-[0.75rem] sm:text-base lg:text-lg">
+          {content}
+        </div>
+      ) : ( */}
+      <div className="cursor-pointer">
+        <img
+          srcSet={imageSrcset}
+          sizes="(max-width: 640px) 80vw, (max-width: 1024px) 50vw, (max-width: 1300px) 45vw, 27vw"
+          src={`${cloudinaryBaseUrl}/${transformationParams}/${imagePublicId}.jpg`}
+          alt="Image from list"
+          loading="eager"
+          style={{
+            visibility: showInfo ? 'hidden' : 'visible', // Make the content visible/invisible
+          }}
+          onClick={handleNext}
+        />
+        <div
+          className="absolute left-0 top-12 h-full font-ft-serif text-[0.75rem] sm:top-6  lg:text-lg"
+          style={{
+            visibility: showInfo ? 'visible' : 'hidden', // Make the content visible/invisible
+          }}
+        >
+          {content}
+        </div>
       </div>
+      {/* )} */}
     </div>
   )
 }
