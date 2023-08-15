@@ -25,7 +25,7 @@ import CarouselItem from './CarouselItem'
 // import mc5 from '@/images/graphics/3/mc5.jpg'
 // import mc6 from '@/images/graphics/3/mc6.jpg'
 
-SwiperCore.use([Mousewheel, FreeMode])
+SwiperCore.use([Mousewheel, FreeMode, Lazy])
 // const millcrossMerch = [tulip, sabina, cherub, sign]
 // const melissa = [melissacard]
 // const bbp = [bbposter]
@@ -106,6 +106,7 @@ const HorizontalScroll = () => {
       mousewheel
       freeMode={isFreeMode}
       centeredSlides={false}
+      lazy={{ enabled: true }} // Enable lazy loading
       // onSlideChange={handleSlideChange}
       onSwiper={(swiperInstance) => setSwiper(swiperInstance)}
       breakpoints={
