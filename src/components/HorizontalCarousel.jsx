@@ -33,30 +33,28 @@ SwiperCore.use([Mousewheel, FreeMode])
 // const mc = [mc1, mc2, mc3, mc4, mc5, mc6]
 
 const millcrossMerch = [
-  'https://res.cloudinary.com/dkso10gnx/image/upload/v1691801116/portfolio/tulipfull_qsubhd.jpg',
-  'https://res.cloudinary.com/dkso10gnx/image/upload/v1691801116/portfolio/card_ozmgfc.jpg',
-  'https://res.cloudinary.com/dkso10gnx/image/upload/v1691801116/portfolio/cherubv2_czphz2.jpg',
-  'https://res.cloudinary.com/dkso10gnx/image/upload/v1691801116/portfolio/sign_eivln1.jpg',
+  'https://res.cloudinary.com/dkso10gnx/image/upload/q_auto/w_620,h_803/v1691801116/portfolio/tulipfull_qsubhd.jpg',
+  'https://res.cloudinary.com/dkso10gnx/image/upload/q_auto/w_620,h_803/v1691801116/portfolio/card_ozmgfc.jpg',
+  'https://res.cloudinary.com/dkso10gnx/image/upload/q_auto/w_620,h_803/v1691801116/portfolio/cherubv2_czphz2.jpg',
+  'https://res.cloudinary.com/dkso10gnx/image/upload/q_auto/w_620,h_803/v1691801116/portfolio/sign_eivln1.jpg',
 ]
 const melissa = [
-  'https://res.cloudinary.com/dkso10gnx/image/upload/v1691801109/portfolio/bluecard_r1fgpw.jpg',
+  'https://res.cloudinary.com/dkso10gnx/image/upload/q_auto/w_620,h_803/v1691801109/portfolio/bluecard_r1fgpw.jpg',
 ]
 const bbp = [
-  'https://res.cloudinary.com/dkso10gnx/image/upload/v1691801092/portfolio/bbposter_pfv8cw.jpg',
+  'https://res.cloudinary.com/dkso10gnx/image/upload/q_auto/w_620,h_803/v1691801092/portfolio/bbposter_pfv8cw.jpg',
 ]
 const bbi = [
-  'https://res.cloudinary.com/dkso10gnx/image/upload/v1691801092/portfolio/bbill_cghero.jpg',
+  'https://res.cloudinary.com/dkso10gnx/image/upload/q_auto/w_620,h_803/v1691801092/portfolio/bbill_cghero.jpg',
 ]
 const mc = [
-  'https://res.cloudinary.com/dkso10gnx/image/upload/v1691801103/portfolio/mc1_qdmubh.jpg',
-  'https://res.cloudinary.com/dkso10gnx/image/upload/v1691801103/portfolio/mc2_wqou5v.jpg',
-  'https://res.cloudinary.com/dkso10gnx/image/upload/v1691801103/portfolio/mc4_ahhbju.jpg',
-  'https://res.cloudinary.com/dkso10gnx/image/upload/v1691801103/portfolio/mc6_plge2c.jpg',
-  'https://res.cloudinary.com/dkso10gnx/image/upload/v1691801103/portfolio/mc3_i15vaa.jpg',
-  'https://res.cloudinary.com/dkso10gnx/image/upload/v1691801103/portfolio/mc5_f3th8v.jpg',
+  'https://res.cloudinary.com/dkso10gnx/image/upload/q_auto/w_620,h_803/v1691801103/portfolio/mc1_qdmubh.jpg',
+  'https://res.cloudinary.com/dkso10gnx/image/upload/q_auto/w_620,h_803/v1691801103/portfolio/mc2_wqou5v.jpg',
+  'https://res.cloudinary.com/dkso10gnx/image/upload/q_auto/w_620,h_803/v1691801103/portfolio/mc4_ahhbju.jpg',
+  'https://res.cloudinary.com/dkso10gnx/image/upload/q_auto/w_620,h_803/v1691801103/portfolio/mc6_plge2c.jpg',
+  'https://res.cloudinary.com/dkso10gnx/image/upload/q_auto/w_620,h_803/v1691801103/portfolio/mc3_i15vaa.jpg',
+  'https://res.cloudinary.com/dkso10gnx/image/upload/q_auto/w_620,h_803/v1691801103/portfolio/mc5_f3th8v.jpg',
 ]
-
-
 
 const HorizontalScroll = () => {
   const [isFreeMode, setIsFreeMode] = useState(true)
@@ -66,7 +64,7 @@ const HorizontalScroll = () => {
   useEffect(() => {
     const handleResize = () => {
       setIsFreeMode(window.innerWidth >= 768)
-      // setIsMobile(window.innerWidth <= 769)
+      setIsMobile(window.innerWidth <= 769)
     }
 
     handleResize()
@@ -79,28 +77,27 @@ const HorizontalScroll = () => {
   return (
     <Swiper
       direction="horizontal"
-      slidesPerView={1}
+      slidesPerView="auto"
       spaceBetween={5}
       mousewheel
       freeMode={isFreeMode}
       centeredSlides={false}
       // onSlideChange={handleSlideChange}
       onSwiper={(swiperInstance) => setSwiper(swiperInstance)}
-      // style={{ height: '100%', width: 'auto' }}
       breakpoints={{
         768: {
           slidesPerView: 'auto',
           spaceBetween: 10,
         },
         1024: {
-          slidesPerView: '2.2',
+          slidesPerView: 'auto',
         },
         1280: {
-          slidesPerView: '2.8',
+          slidesPerView: 'auto',
           spaceBetween: 10,
         },
         1536: {
-          slidesPerView: '3.6',
+          slidesPerView: 'auto',
           spaceBetween: 10,
         },
       }}

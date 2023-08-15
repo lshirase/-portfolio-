@@ -28,7 +28,7 @@ const CarouselItem = ({ title, content, images, onNextSlide, isMobile }) => {
   const imageSrc = images[currentIndex]
 
   return (
-    <div className="swiper-slide relative flex object-contain object-center md:w-auto">
+    <div className="swiper-slide relative flex object-contain object-center">
       <div className="hidden justify-between font-ft-serif text-xs sm:flex">
         <div className="flex space-x-2 ">
           <div className="font-ft-bold">{title}</div>
@@ -57,8 +57,14 @@ const CarouselItem = ({ title, content, images, onNextSlide, isMobile }) => {
           {content}
         </div>
       ) : (
-        <div className="cursor-pointer" onClick={handleNext}>
-          <img src={imageSrc} alt="Image from list" loading="eager" />
+        <div className="cursor-pointer " onClick={handleNext}>
+          <img
+            src={imageSrc}
+            alt="Image from list"
+            loading="eager"
+            className=""
+            onClick={handleNext}
+          />
         </div>
       )}
     </div>
