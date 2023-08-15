@@ -88,7 +88,7 @@ const CarouselItem = ({ title, content, images, onNextSlide, isMobile }) => {
           onClick={handleNext}
         />
         <div
-          className="absolute left-0 top-12 h-full font-ft-serif text-[0.75rem] sm:top-6  lg:text-lg"
+          className="absolute left-0 top-12 h-full overflow-y-scroll font-ft-serif text-[0.75rem]  sm:top-6 lg:text-lg"
           style={{
             visibility: showInfo ? 'visible' : 'hidden', // Make the content visible/invisible
           }}
