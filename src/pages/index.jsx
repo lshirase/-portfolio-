@@ -19,7 +19,7 @@ export default function Home() {
         <title>len shirase, design and code</title>
         <meta
           name="description"
-          content="Len Shirase, I'm a designer and developer based in Los Angeles, California."
+          content="designer and developer based in los angeles, california"
         />
       </Head>
       <div className="flex h-[100dvh] flex-col md:w-screen ">

@@ -22,10 +22,7 @@ export default function Nfl() {
     <>
       <Head>
         <title>len shirase nfl + verizon</title>
-        <meta
-          name="description"
-          content="All of my projects with Co-op Solutions."
-        />
+        <meta name="description" content="NFL case study." />
       </Head>
       <div
         className={

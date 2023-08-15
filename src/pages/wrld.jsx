@@ -14,10 +14,7 @@ export default function Wrld() {
     <>
       <Head>
         <title>len shirase wrld</title>
-        <meta
-          name="description"
-          content="All of my projects with Co-op Solutions."
-        />
+        <meta name="description" content="WRLD web design." />
       </Head>
       <div
         className={

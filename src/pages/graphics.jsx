@@ -9,10 +9,7 @@ export default function Graphics() {
     <>
       <Head>
         <title>len shirase, design and code</title>
-        <meta
-          name="description"
-          content="Len Shirase, I'm a designer and developer based in Los Angeles, California."
-        />
+        <meta name="description" content="graphic design work" />
       </Head>
       <div>
         <div className="flex h-[100dvh] max-h-[100dvh] w-screen flex-col overflow-y-hidden bg-white text-black md:justify-between">
