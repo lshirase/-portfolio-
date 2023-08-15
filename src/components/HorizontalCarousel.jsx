@@ -66,7 +66,7 @@ const HorizontalScroll = () => {
   useEffect(() => {
     const handleResize = () => {
       setIsFreeMode(window.innerWidth >= 768)
-      setIsMobile(window.innerWidth <= 769)
+      // setIsMobile(window.innerWidth <= 769)
     }
 
     handleResize()
@@ -75,17 +75,6 @@ const HorizontalScroll = () => {
       window.removeEventListener('resize', handleResize)
     }
   }, [])
-
-  // const handleSlideChange = () => {
-  //   if (swiper && isMobile) {
-  //     const activeIndex = swiper.activeIndex
-  //     const totalSlides = swiper.slides.length
-
-  //     if (activeIndex === totalSlides - 1) {
-  //       swiper.slideTo(activeIndex) // Stay on the same slide
-  //     }
-  //   }
-  // }
 
   return (
     <Swiper
