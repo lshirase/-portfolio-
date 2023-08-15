@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import SwiperCore from 'swiper'
-import { Mousewheel, FreeMode } from 'swiper/modules'
+import { Mousewheel, FreeMode, Lazy } from 'swiper/modules'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
