@@ -82,7 +82,6 @@ const CarouselItem = ({ title, content, images, onNextSlide, isMobile }) => {
           sizes="(max-width: 640px) 80vw, (max-width: 1024px) 50vw, (max-width: 1300px) 45vw, 27vw"
           src={`${cloudinaryBaseUrl}/${transformationParams}/${imagePublicId}.jpg`}
           alt="Image from list"
-          loading="eager"
           style={{
             visibility: showInfo ? 'hidden' : 'visible', // Make the content visible/invisible
           }}
