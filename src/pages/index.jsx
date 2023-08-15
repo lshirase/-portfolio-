@@ -57,10 +57,10 @@ export default function Home() {
             </ol>
           </div>
         </div>
-        <div className="hidden flex-grow flex-col items-center justify-center md:flex">
+        <div className="hidden flex-grow flex-col items-center justify-center lg:flex">
           <VideoPlayer videos={videos} type="video/webm" />
         </div>
-        <div className="flex flex-grow flex-col items-center justify-center md:hidden">
+        <div className="flex flex-grow flex-col items-center justify-center lg:hidden">
           <VideoPlayerMobile />
         </div>
       </div>
