@@ -198,8 +198,6 @@ const HorizontalScroll = () => {
               Doctoral Candidate @thabisilegriffin (UCLA) will speak on the
               histories that led to this current movement, and tackle the
               pressing tasks of abolishing police and building a just new world.
-              @zilcraft and @penttigram will present unique protest art
-              illustrating those ideas.
             </>
           }
           onNextSlide={() => {
