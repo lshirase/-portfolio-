@@ -22,7 +22,7 @@ export default function Document() {
           sizes="16x16"
           href="/favicons/favicon-32x32.png"
         />
-        <link rel="icon" href="/images/favicon.ico" />
+        <link rel="icon" href="/images/favicons/favicon.ico" />
         <meta property="og:image" content="Link preview image URL" />
         <meta
           property="og:image"
