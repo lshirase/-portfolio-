@@ -74,17 +74,6 @@ const HorizontalScroll = () => {
     }
   }, [])
 
-  // const handleSlideChange = () => {
-  //   if (swiper && isMobile) {
-  //     const activeIndex = swiper.activeIndex
-  //     const totalSlides = swiper.slides.length
-
-  //     if (activeIndex === totalSlides - 1) {
-  //       swiper.slideTo(activeIndex) // Stay on the same slide
-  //     }
-  //   }
-  // }
-
   return (
     <Swiper
       direction="horizontal"
