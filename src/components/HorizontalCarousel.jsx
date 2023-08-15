@@ -56,7 +56,29 @@ const mc = [
   'https://res.cloudinary.com/dkso10gnx/image/upload/v1691801103/portfolio/mc5_f3th8v.jpg',
 ]
 
-
+// const millcrossMerch = [
+//   'v1691801116/portfolio/tulipfull_qsubhd.jpg',
+//   'v1691801116/portfolio/card_ozmgfc.jpg',
+//   'v1691801116/portfolio/cherubv2_czphz2.jpg',
+//   'v1691801116/portfolio/sign_eivln1.jpg',
+// ]
+// const melissa = [
+//   'v1691801109/portfolio/bluecard_r1fgpw.jpg',
+// ]
+// const bbp = [
+//   'v1691801092/portfolio/bbposter_pfv8cw.jpg',
+// ]
+// const bbi = [
+//   'v1691801092/portfolio/bbill_cghero.jpg',
+// ]
+// const mc = [
+//   'v1691801103/portfolio/mc1_qdmubh.jpg',
+//   'v1691801103/portfolio/mc2_wqou5v.jpg',
+//   'v1691801103/portfolio/mc4_ahhbju.jpg',
+//   'v1691801103/portfolio/mc6_plge2c.jpg',
+//   'v1691801103/portfolio/mc3_i15vaa.jpg',
+//   'v1691801103/portfolio/mc5_f3th8v.jpg',
+// ]
 
 const HorizontalScroll = () => {
   const [isFreeMode, setIsFreeMode] = useState(true)
@@ -76,45 +98,35 @@ const HorizontalScroll = () => {
     }
   }, [])
 
-  // const handleSlideChange = () => {
-  //   if (swiper && isMobile) {
-  //     const activeIndex = swiper.activeIndex
-  //     const totalSlides = swiper.slides.length
-
-  //     if (activeIndex === totalSlides - 1) {
-  //       swiper.slideTo(activeIndex) // Stay on the same slide
-  //     }
-  //   }
-  // }
-
   return (
     <Swiper
       direction="horizontal"
-      slidesPerView={1}
+      slidesPerView="auto"
       spaceBetween={5}
       mousewheel
       freeMode={isFreeMode}
       centeredSlides={false}
       // onSlideChange={handleSlideChange}
       onSwiper={(swiperInstance) => setSwiper(swiperInstance)}
-      // style={{ height: '100%', width: 'auto' }}
-      breakpoints={{
-        768: {
-          slidesPerView: 'auto',
-          spaceBetween: 10,
-        },
-        1024: {
-          slidesPerView: '2.2',
-        },
-        1280: {
-          slidesPerView: '2.8',
-          spaceBetween: 10,
-        },
-        1536: {
-          slidesPerView: '3.6',
-          spaceBetween: 10,
-        },
-      }}
+      breakpoints={
+        {
+          // 768: {
+          //   slidesPerView: 'auto',
+          //   spaceBetween: 10,
+          // },
+          // 1024: {
+          //   slidesPerView: '2.2',
+          // },
+          // 1280: {
+          //   slidesPerView: '2.8',
+          //   spaceBetween: 10,
+          // },
+          // 1536: {
+          //   slidesPerView: '3.6',
+          //   spaceBetween: 10,
+          // },
+        }
+      }
     >
       {/* {items.map((item, index) => ( */}
       <SwiperSlide>

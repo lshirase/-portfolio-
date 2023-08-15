@@ -33,7 +33,7 @@
 }
  
 .swiper-slide{
-  width: auto;
+  width: auto !important;
   flex-shrink: 0;
   display: block;
   height: 100%;
