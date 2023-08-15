@@ -43,7 +43,7 @@ const CarouselItem = ({ title, content, images, onNextSlide, isMobile }) => {
   const imageSrcset = srcsetSizes
     .map(
       (size) =>
-        `${cloudinaryBaseUrl}/${transformationParams},w_${size.width}/portfolio/${imagePublicId}.jpg ${size.size}`
+        `${cloudinaryBaseUrl}${transformationParams},w_${size.width}/portfolio/${imagePublicId}.jpg ${size.size}`
     )
     .join(', ')
   return (

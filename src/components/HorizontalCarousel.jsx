@@ -106,7 +106,7 @@ const HorizontalScroll = () => {
       mousewheel
       freeMode={isFreeMode}
       centeredSlides={false}
-      lazy={{ enabled: true }} // Enable lazy loading
+      lazy={true} // Enable lazy loading
       // onSlideChange={handleSlideChange}
       onSwiper={(swiperInstance) => setSwiper(swiperInstance)}
       breakpoints={
